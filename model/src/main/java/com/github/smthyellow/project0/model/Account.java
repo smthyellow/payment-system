@@ -1,24 +1,24 @@
 package com.github.smthyellow.project0.model;
 
 public class Account {
-    private User owner;
-    private long count;
+    private int userId;
+    private long accountId;
     private int balance;
 
-    public User getOwner() {
-        return owner;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setOwner(User owner) {
-        this.owner = owner;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
-    public long getCount() {
-        return count;
+    public long getAccountId() {
+        return accountId;
     }
 
-    public void setCount(long count) {
-        this.count = count;
+    public void setAccountId(long accountId) {
+        this.accountId = accountId;
     }
 
     public int getBalance() {

@@ -6,7 +6,21 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89a1cb85-9d04-4e01-8d09-c5772c72ed08" name="Default Changelist" comment="" />
+    <list default="true" id="89a1cb85-9d04-4e01-8d09-c5772c72ed08" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/AccountEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/BillEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/CardEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dao.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/user/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/user/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/Card.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +73,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -67,13 +84,18 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1SFnfSesb23oQ76jnnQCUK8PWPB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../example" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.17525774" />
@@ -326,20 +348,33 @@
       <workItem from="1572193378329" duration="1283000" />
       <workItem from="1572195389070" duration="1227000" />
       <workItem from="1572199190766" duration="598000" />
+      <workItem from="1572269434987" duration="3044000" />
+      <workItem from="1572375123526" duration="267000" />
+      <workItem from="1572428343088" duration="229000" />
+      <workItem from="1572455354444" duration="7332000" />
+      <workItem from="1572519644228" duration="990000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/user/UserDaoImpl.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/user/UserServiceImpl.java</url>
           <line>42</line>

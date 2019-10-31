@@ -1,71 +1,47 @@
 package com.github.smthyellow.project0.model;
 
-import java.util.Date;
-
 public class Card {
-    private Long id;
-    private User owner;
-    private Date expiryDate;
-    private int cvv;
-    private Account account;
-    private long cardNumber;
+    private Long cardId;
+    private int userId;
+    private short cvv;
+    private int accountId;
 
-    public Card(Long id, User owner, Date expiryDate, int cvv, Account account, long cardNumber) {
-        this.id = id;
-        this.owner = owner;
-        this.expiryDate = expiryDate;
+    public Card(Long cardId, int userId, short cvv, int accountId) {
+        this.cardId = cardId;
+        this.userId = userId;
         this.cvv = cvv;
-        this.account = account;
-        this.cardNumber = cardNumber;
+        this.accountId = accountId;
     }
 
-    //public Card(int id, User owner, Date expiryDate, int cvv, Account account, long cardNumber){}
-
-    public Long getId() {
-        return id;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
-    public User getOwner() {
-        return owner;
+    public Long getCardId() {
+        return cardId;
     }
 
-    public void setOwner(User owner) {
-        this.owner = owner;
+    public void setCardId(Long cardId) {
+        this.cardId = cardId;
     }
 
-    public Date getExpiryDate() {
-        return expiryDate;
-    }
-
-    public void setExpiryDate(Date expiryDate) {
-        this.expiryDate = expiryDate;
-    }
-
-    public int getCvv() {
+    public short getCvv() {
         return cvv;
     }
 
-    public void setCvv(int cvv) {
+    public void setCvv(short cvv) {
         this.cvv = cvv;
     }
 
-    public Account getAccount() {
-        return account;
+    public int getAccountId() {
+        return accountId;
     }
 
-    public void setAccount(Account account) {
-        this.account = account;
-    }
-
-    public long getCardNumber() {
-        return cardNumber;
-    }
-
-    public void setCardNumber(long cardNumber) {
-        this.cardNumber = cardNumber;
+    public void setAccountId(int accountId) {
+        this.accountId = accountId;
     }
 }
