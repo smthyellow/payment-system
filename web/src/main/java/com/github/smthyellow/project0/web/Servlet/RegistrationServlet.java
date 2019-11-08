@@ -1,8 +1,9 @@
 package com.github.smthyellow.project0.web.Servlet;
 
+import com.github.smthyellow.project0.model.AuthUser;
 import com.github.smthyellow.project0.model.User;
-import com.github.smthyellow.project0.service.user.UserService;
-import com.github.smthyellow.project0.service.user.UserServiceImpl;
+import com.github.smthyellow.project0.service.authUserService.AuthUserService;
+import com.github.smthyellow.project0.service.authUserService.AuthUserServiceImpl;
 import com.github.smthyellow.project0.web.WebUtils;
 
 import javax.servlet.ServletException;
@@ -14,7 +15,7 @@ import java.io.IOException;
 
 @WebServlet("/registration")
 public class RegistrationServlet extends HttpServlet {
-    private UserService userService = UserServiceImpl.getInstance();
+    private AuthUserService authUserService = AuthUserServiceImpl.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -31,9 +32,9 @@ public class RegistrationServlet extends HttpServlet {
         String confirmPassword = req.getParameter("confirmPassword");
 
         boolean passwordMatch = confirmPassword.equals(password);
-        User user = userService.checkExistence(email);
+        AuthUser authUser = authUserService.checkExistence(email);
 
-        if (user != null) {
+        if (authUser != null) {
             req.setAttribute("error", "User with this email already exists.");
             WebUtils.forward("registration", req, resp);
             return;
@@ -46,7 +47,7 @@ public class RegistrationServlet extends HttpServlet {
             WebUtils.forward("registration", req, resp);
             return;
         } else {
-            int id = userService.saveUser(firstName, lastName, email, phone, password);
+            authUserService.totalSaveAuthUser(firstName, lastName, email, phone, password);
             WebUtils.redirect("personalpage", req, resp);
         }
     }

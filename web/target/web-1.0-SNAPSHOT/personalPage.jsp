@@ -11,21 +11,16 @@
 <head>
     <title>Personal page</title>
 </head>
-
 <body>
 
 <p>User: ${name}</p>
-<p>Email: ${email}</p>
 <p>Phone: ${phone}</p>
 <p>Id: ${id}</p>
-<c:if test="${id == 1}">
 
-    <p>You're first!</p>
-</c:if>
-
+<p><a href="${pageContext.request.contextPath}/cardManagement">My cards</a></p>
+<p><a href="${pageContext.request.contextPath}/accountManagement">My accounts</a></p>
+<p><a href="${pageContext.request.contextPath}/cardManagement">Services</a></p>
 <p><a href="${pageContext.request.contextPath}/datachange">Change personal data</a></p>
-
-Here will be info about cards and accounts.
 
 <p><a href="${pageContext.request.contextPath}/logout">Logout</a></p>
 

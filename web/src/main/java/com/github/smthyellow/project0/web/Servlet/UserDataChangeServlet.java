@@ -1,8 +1,7 @@
 package com.github.smthyellow.project0.web.Servlet;
 
-import com.github.smthyellow.project0.model.User;
-import com.github.smthyellow.project0.service.user.UserService;
-import com.github.smthyellow.project0.service.user.UserServiceImpl;
+import com.github.smthyellow.project0.service.userService.UserService;
+import com.github.smthyellow.project0.service.userService.UserServiceImpl;
 import com.github.smthyellow.project0.web.WebUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,7 +20,7 @@ public class UserDataChangeServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        WebUtils.forward("datachange", req, resp);
+        WebUtils.forward("dataChange", req, resp);
 
     }
 
@@ -29,7 +28,7 @@ public class UserDataChangeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 
-        String firstName = req.getParameter("firstName");
+        /*String firstName = req.getParameter("firstName");
         String lastName = req.getParameter("lastName");
         String email = req.getParameter("email");
         String phone = req.getParameter("phone");
@@ -58,7 +57,7 @@ public class UserDataChangeServlet extends HttpServlet {
 
             userService.updateUser(user);
             log.info("user {} updated", user.getFullName());
-        }
+        }*/
 
 
     }

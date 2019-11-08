@@ -1,8 +1,8 @@
 package com.github.smthyellow.project0.web.Servlet;
 
 import com.github.smthyellow.project0.model.User;
-import com.github.smthyellow.project0.service.user.UserService;
-import com.github.smthyellow.project0.service.user.UserServiceImpl;
+import com.github.smthyellow.project0.service.userService.UserService;
+import com.github.smthyellow.project0.service.userService.UserServiceImpl;
 import com.github.smthyellow.project0.web.WebUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

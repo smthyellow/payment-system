@@ -1,47 +1,64 @@
 package com.github.smthyellow.project0.model;
 
 public class Card {
-    private Long cardId;
-    private int userId;
-    private short cvv;
-    private int accountId;
+    private long cardId;
+    private long userId;
+    private int cvv;
+    private long cardNumber;
+    private long accountId;
 
-    public Card(Long cardId, int userId, short cvv, int accountId) {
-        this.cardId = cardId;
+    public Card(long userId, int cvv, long cardNumber, long accountId) {
         this.userId = userId;
         this.cvv = cvv;
+        this.cardNumber = cardNumber;
         this.accountId = accountId;
     }
 
-    public int getUserId() {
+    public Card(long cardId, long userId, int cvv, long cardNumber, long accountId) {
+        this.cardId = cardId;
+        this.userId = userId;
+        this.cvv = cvv;
+        this.cardNumber = cardNumber;
+        this.accountId = accountId;
+    }
+
+    public long getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(long userId) {
         this.userId = userId;
     }
 
-    public Long getCardId() {
+    public long getCardId() {
         return cardId;
     }
 
-    public void setCardId(Long cardId) {
+    public void setCardId(long cardId) {
         this.cardId = cardId;
     }
 
-    public short getCvv() {
+    public int getCvv() {
         return cvv;
     }
 
-    public void setCvv(short cvv) {
+    public void setCvv(int cvv) {
         this.cvv = cvv;
     }
 
-    public int getAccountId() {
+    public long getCardNumber() {
+        return cardNumber;
+    }
+
+    public void setCardNumber(long cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+
+    public long getAccountId() {
         return accountId;
     }
 
-    public void setAccountId(int accountId) {
+    public void setAccountId(long accountId) {
         this.accountId = accountId;
     }
 }

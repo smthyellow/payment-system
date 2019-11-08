@@ -1,45 +1,39 @@
 package com.github.smthyellow.project0.model;
 
 public class User {
+    private long userId;
     private String firstName;
     private String lastName;
     private String phone;
-    private String email;
-    private int userId;
-    private String password;
-    private Role role;
+    private long authUserId;
 
-    public User(String firstName, String lastName, String phone, String email, Integer userId, String password, Role role) {
+    public User(long userId, String firstName, String lastName, String phone, long authUserId) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phone = phone;
-        this.email = email;
         this.userId = userId;
-        this.password = password;
-        this.role = role;
+        this.authUserId = authUserId;
+
     }
 
-    public String getPassword() {
-        return password;
+    public User(String firstName, String lastName, String phone, long authUserId) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phone = phone;
+        this.authUserId = authUserId;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public User(String firstName, String lastName, String phone) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phone = phone;
     }
 
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
-        this.role = role;
-    }
-
-    public int getUserId() {
+    public long getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(long userId) {
         this.userId = userId;
     }
 
@@ -67,12 +61,12 @@ public class User {
         this.phone = phone;
     }
 
-    public String getEmail() {
-        return email;
+    public long getAuthUserId() {
+        return authUserId;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setAuthUserId(long authUserId) {
+        this.authUserId = authUserId;
     }
 
     public String getFullName() {

@@ -20,8 +20,5 @@
     <p style="color: red">${error}</p>
 
     <input type="submit">
-
-
-
 </form>
 
