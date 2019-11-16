@@ -8,10 +8,12 @@ public interface AuthUserDao {
 
     AuthUser getByEmail(String email);
 
-    long saveAuthUser(String email, String password, Role role);
+    AuthUser saveAuthUser(AuthUser authUser, User user);
 
-    void updateAuthUser(AuthUser authUser);
+    void updateAuthUser(AuthUser authUser, User user);
 
     void deleteAuthUser(AuthUser authUser);
+
+    AuthUser getByAuthUserId(long authUserId);
 
 }

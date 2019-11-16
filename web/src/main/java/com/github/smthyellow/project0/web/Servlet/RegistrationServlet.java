@@ -47,7 +47,9 @@ public class RegistrationServlet extends HttpServlet {
             WebUtils.forward("registration", req, resp);
             return;
         } else {
-            authUserService.totalSaveAuthUser(firstName, lastName, email, phone, password);
+            authUser = authUserService.totalSaveAuthUser(firstName, lastName, email, phone, password);
+
+            req.setAttribute("authUser", authUser);
             WebUtils.redirect("personalpage", req, resp);
         }
     }

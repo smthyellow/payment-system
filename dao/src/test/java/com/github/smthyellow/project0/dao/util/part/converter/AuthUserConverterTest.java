@@ -1,6 +1,6 @@
-package com.github.smthyellow.project0.dao.part.converter;
+package com.github.smthyellow.project0.dao.util.part.converter;
 
-import com.github.smthyellow.project0.dao.part.entity.AuthUserEntity;
+import com.github.smthyellow.project0.dao.util.part.entity.AuthUserEntity;
 import com.github.smthyellow.project0.model.AuthUser;
 import com.github.smthyellow.project0.model.Role;
 import org.junit.jupiter.api.Test;

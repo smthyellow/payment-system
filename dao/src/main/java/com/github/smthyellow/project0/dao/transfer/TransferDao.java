@@ -1,9 +1,13 @@
 package com.github.smthyellow.project0.dao.transfer;
 
-import com.github.smthyellow.project0.dao.part.entity.TransferEntity;
+import com.github.smthyellow.project0.model.Transfer;
 
 import java.util.List;
 
 public interface TransferDao {
-    //List<TransferEntity> getTransferByUserId();
+    void newTransfer(Transfer transfer);
+
+    List<Transfer> getTransfersToUser(long authUserId);
+
+    List<Transfer> getTransfersFromUser(long authUserId);
 }

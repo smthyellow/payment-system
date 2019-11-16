@@ -2,6 +2,8 @@ package com.github.smthyellow.project0.service.authUserService;
 
 import com.github.smthyellow.project0.dao.authUser.AuthUserDao;
 import com.github.smthyellow.project0.dao.authUser.AuthUserDaoImpl;
+import com.github.smthyellow.project0.dao.user.UserDao;
+import com.github.smthyellow.project0.dao.user.UserDaoImpl;
 import com.github.smthyellow.project0.model.AuthUser;
 import com.github.smthyellow.project0.model.Role;
 import com.github.smthyellow.project0.model.User;
@@ -18,7 +20,7 @@ public class AuthUserServiceImpl implements AuthUserService {
     }
 
     private AuthUserDao authUserDao = AuthUserDaoImpl.getInstance();
-    private UserService userService = UserServiceImpl.getInstance();
+    private UserDao userDao = UserDaoImpl.getInstance();
 
     @Override
     public AuthUser loginUser(String email, String password){
@@ -39,13 +41,36 @@ public class AuthUserServiceImpl implements AuthUserService {
     }
 
     @Override
-    public Long totalSaveAuthUser(String firstName, String lastName, String email, String phone, String password){
-        Role firstRole = Role.CLIENT;
-        Long authUserId = authUserDao.saveAuthUser(email, password, firstRole);
-        User user = new User(firstName, lastName, phone, authUserId);
-        userService.saveUser(user);
-        AuthUser authUser = new AuthUser(authUserId, email, password, firstRole);
-        return authUserId;
+    public AuthUser totalSaveAuthUser(String firstName, String lastName, String email, String phone, String password){
+        AuthUser authUser = authUserDao.saveAuthUser(
+                        new AuthUser(email, password, Role.CLIENT),
+                        new User(firstName, lastName, phone));
+        return authUser;
+    }
+
+    @Override
+    public AuthUser updateAuthUser(long authUserId, String firstName, String lastName, String email, String phone, String password){
+        AuthUser authUser = authUserDao.getByAuthUserId(authUserId);
+        User user = userDao.getByAuthUserId(authUserId);
+        if (firstName != null) {
+            user.setFirstName(firstName);
+        }
+        if (lastName != null) {
+            user.setLastName(lastName);
+        }
+        if (email != null) {
+            authUser.setEmail(email);
+        }
+        if (phone != null) {
+            user.setPhone(phone);
+        }
+        if (password != null) {
+            authUser.setPassword(password);
+        }
+
+        authUserDao.updateAuthUser(authUser,user);
+
+        return authUser;
     }
 
 }

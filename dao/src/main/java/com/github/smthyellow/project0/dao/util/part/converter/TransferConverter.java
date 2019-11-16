@@ -1,6 +1,6 @@
-package com.github.smthyellow.project0.dao.part.converter;
+package com.github.smthyellow.project0.dao.util.part.converter;
 
-import com.github.smthyellow.project0.dao.part.entity.TransferEntity;
+import com.github.smthyellow.project0.dao.util.part.entity.TransferEntity;
 import com.github.smthyellow.project0.model.Transfer;
 
 public class TransferConverter {
@@ -12,10 +12,7 @@ public class TransferConverter {
         final TransferEntity transferEntity = new TransferEntity();
 
         transferEntity.setTransferId(transfer.getTransferId());
-        transferEntity.setFromAccountId(transfer.getFromAccountId());
-        transferEntity.setToAccountId(transfer.getToAccountId());
         transferEntity.setSum(transfer.getSum());
-
         return transferEntity;
     }
 
@@ -23,13 +20,9 @@ public class TransferConverter {
         if(transferEntity == null){
             return null;
         }
-
         return new Transfer(
                 transferEntity.getTransferId(),
-                transferEntity.getFromAccountId(),
-                transferEntity.getToAccountId(),
                 transferEntity.getSum()
-
         );
     }
 }

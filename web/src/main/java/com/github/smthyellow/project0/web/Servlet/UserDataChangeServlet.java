@@ -1,5 +1,9 @@
 package com.github.smthyellow.project0.web.Servlet;
 
+import com.github.smthyellow.project0.model.AuthUser;
+import com.github.smthyellow.project0.model.User;
+import com.github.smthyellow.project0.service.authUserService.AuthUserService;
+import com.github.smthyellow.project0.service.authUserService.AuthUserServiceImpl;
 import com.github.smthyellow.project0.service.userService.UserService;
 import com.github.smthyellow.project0.service.userService.UserServiceImpl;
 import com.github.smthyellow.project0.web.WebUtils;
@@ -17,6 +21,7 @@ import java.io.IOException;
 public class UserDataChangeServlet extends HttpServlet {
     private static final Logger log = LoggerFactory.getLogger(UserDataChangeServlet.class);
     private UserService userService = UserServiceImpl.getInstance();
+    private AuthUserService authUserService = AuthUserServiceImpl.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -26,38 +31,32 @@ public class UserDataChangeServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        AuthUser authUser = (AuthUser) req.getSession().getAttribute("authUser");
 
-
-        /*String firstName = req.getParameter("firstName");
+        String firstName = req.getParameter("firstName");
         String lastName = req.getParameter("lastName");
         String email = req.getParameter("email");
         String phone = req.getParameter("phone");
-        String currentPassword = req.getParameter("currentpassword");
+        String currentPassword = req.getParameter("currentPassword");
         String password = req.getParameter("password");
-        String confirmPassword = req.getParameter("confirmpassword");
+        String confirmPassword = req.getParameter("confirmPassword");
 
-        User user = (User) req.getSession().getAttribute("authUser");
-
-        if (currentPassword.equals(user.getPassword()) && password.equals(confirmPassword)) {
-            if (firstName != null) {
-                user.setFirstName(firstName);
+        if (currentPassword.equals(authUser.getPassword())) {
+            if (password.equals(confirmPassword)){
+                authUser = authUserService.updateAuthUser(authUser.getAuthUserId(), firstName, lastName, email, phone, password);
+                req.setAttribute("authUser", authUser);
+                User user = userService.getUserByAuthUserId(authUser.getAuthUserId());
+                log.info("user {} updated", user.getFullName());
+            } else {
+                req.setAttribute("error", "Passwords don't match.");
+                WebUtils.forward("dataChange", req, resp);
+                return;
             }
-            if (lastName != null) {
-                user.setLastName(lastName);
-            }
-            if (email != null) {
-                user.setEmail(email);
-            }
-            if (phone != null) {
-                user.setPhone(phone);
-            }
-            if (password != null) {
-                user.setPassword(password);
-            }
-
-            userService.updateUser(user);
-            log.info("user {} updated", user.getFullName());
-        }*/
+        } else {
+            req.setAttribute("error", "Current password is incorrect.");
+            WebUtils.forward("dataChange", req, resp);
+            return;
+        }
 
 
     }

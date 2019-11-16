@@ -1,14 +1,14 @@
 package com.github.smthyellow.project0.service.billService;
 
+import com.github.smthyellow.project0.model.AuthUser;
 import com.github.smthyellow.project0.model.Bill;
 
+import java.util.List;
+
 public interface BillService {
+    List<Bill> getAllUtilities();
 
-    void addBill(Bill bill);
+    Bill getBillById(long billId);
 
-    void updateBill(Bill bill);
-
-    void payBill(Bill bill);
-
-    void deleteBill(Bill bill);
+    void appointBillToUser(Bill bill, AuthUser authUser);
 }

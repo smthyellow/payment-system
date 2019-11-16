@@ -24,7 +24,7 @@ public class CardManagementServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
         AuthUser authUser = (AuthUser) req.getSession().getAttribute("authUser");
-        List<Card> cards = cardService.getListOfCards(authUser.getAuthUserId());
+        List<Card> cards = cardService.getCardsList(authUser.getAuthUserId());
         req.setAttribute("cards", cards);
         WebUtils.forward("cardManagement", req, resp);
     }
@@ -32,8 +32,8 @@ public class CardManagementServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
         AuthUser authUser = (AuthUser) req.getSession().getAttribute("authUser");
-        Long accountId = Long.parseLong(req.getParameter("accountId"));
-        Long cardNumber = cardService.addCard(authUser.getAuthUserId(), accountId);
+        long accountId = Long.parseLong(req.getParameter("accountId"));
+        long cardNumber = cardService.addCard(accountId);
         req.setAttribute("message", "Card " + cardNumber + " created");
         log.info("card created:{} at {}", cardNumber, LocalDateTime.now());
 

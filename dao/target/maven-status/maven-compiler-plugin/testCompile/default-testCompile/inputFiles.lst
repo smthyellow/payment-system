@@ -1,10 +1,10 @@
-/home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/part/converter/UserConverterTest.java
-/home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/part/converter/BillConverterTest.java
+/home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/util/part/converter/UserConverterTest.java
 /home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/HibernateUtilTest.java
 /home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/account/AccountDaoImplTest.java
-/home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/part/converter/AccountConverterTest.java
+/home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/util/part/converter/TransferConverterTest.java
+/home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/util/part/converter/AccountConverterTest.java
 /home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/card/CardDaoImplTest.java
-/home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/part/converter/AuthUserConverterTest.java
 /home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/authUser/AuthUserDaoImplTest.java
-/home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/part/converter/TransferConverterTest.java
-/home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/part/converter/CardConverterTest.java
+/home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/util/part/converter/CardConverterTest.java
+/home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/util/part/converter/AuthUserConverterTest.java
+/home/transilvania/IdeaProjects/project1/dao/src/test/java/com/github/smthyellow/project0/dao/util/part/converter/BillConverterTest.java

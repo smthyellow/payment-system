@@ -1,12 +1,13 @@
-package com.github.smthyellow.project0.dao.part.entity;
+package com.github.smthyellow.project0.dao.util.part.entity;
 
-import com.github.smthyellow.project0.model.Card;
-
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.annotations.Cache;
 import javax.persistence.*;
-import java.util.Set;
+
 
 @Entity
 @Table
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class CardEntity {
 
     private long cardId;
@@ -14,14 +15,14 @@ public class CardEntity {
     private int cvv;
     private long cardNumber;
     private long accountId;
+    private AccountEntity accountEntity;
 
     public CardEntity() {
     }
 
-    public CardEntity(long userId, int cvv, long cardNumber, long accountId) {
-        this.authUserId = userId;
+    public CardEntity(int cvv, long cardNumber) {
         this.cvv = cvv;
-        this.accountId = accountId;
+        this.cardNumber = cardNumber;
     }
 
     public CardEntity(long cardId, long userId, int cvv, long cardNumber, long accountId) {
@@ -74,32 +75,6 @@ public class CardEntity {
 
     public void setAccountId(long accountId) {
         this.accountId = accountId;
-    }
-
-
-    private AuthUserEntity authUserEntity;
-
-    private Set<BillEntity> billEntitySet;
-
-    private AccountEntity accountEntity;
-
-    @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "authUserId")
-    public AuthUserEntity getAuthUserEntity() {
-        return authUserEntity;
-    }
-
-    public void setAuthUserEntity(AuthUserEntity authUserEntity) {
-        this.authUserEntity = authUserEntity;
-    }
-
-    @OneToMany(mappedBy = "cardEntity", cascade = CascadeType.ALL)
-    public Set<BillEntity> getBillEntitySet() {
-        return billEntitySet;
-    }
-
-    public void setBillEntitySet(Set<BillEntity> billEntitySet) {
-        this.billEntitySet = billEntitySet;
     }
 
     @ManyToOne(cascade = CascadeType.PERSIST)

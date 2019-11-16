@@ -10,6 +10,8 @@ public interface AuthUserService {
 
     AuthUser checkExistence(String email);
 
-    Long totalSaveAuthUser(String firstName, String lastName, String email, String phone, String password);
+    AuthUser totalSaveAuthUser(String firstName, String lastName, String email, String phone, String password);
+
+    AuthUser updateAuthUser(long authUserId, String firstName, String lastName, String email, String phone, String password);
 
 }

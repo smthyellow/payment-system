@@ -1,6 +1,6 @@
-package com.github.smthyellow.project0.dao.part.converter;
+package com.github.smthyellow.project0.dao.util.part.converter;
 
-import com.github.smthyellow.project0.dao.part.entity.AccountEntity;
+import com.github.smthyellow.project0.dao.util.part.entity.AccountEntity;
 import com.github.smthyellow.project0.model.Account;
 
 public class AccountConverter {
@@ -10,11 +10,9 @@ public class AccountConverter {
         }
 
         final AccountEntity accountEntity = new AccountEntity();
-        //long accountId, int userId, int balance
-        accountEntity.setAccountId(account.getAccountId());
-        accountEntity.setAuthUserId(account.getAuthUserId());
-        accountEntity.setBalance(account.getBalance());
 
+        accountEntity.setAccountId(account.getAccountId());
+        accountEntity.setBalance(account.getBalance());
         return accountEntity;
     }
 
@@ -22,10 +20,8 @@ public class AccountConverter {
         if(accountEntity == null){
             return null;
         }
-
         return new Account(
                 accountEntity.getAccountId(),
-                accountEntity.getAuthUserId(),
                 accountEntity.getBalance()
         );
     }

@@ -21,7 +21,7 @@ class AccountServiceImplTest {
     @InjectMocks
     AccountServiceImpl service;
 
-    @Test
+    /*@Test
     void addAccount(){
         when(dao.saveAccount(1L, 1111111111L, 0)).thenReturn(1L);
 
@@ -29,6 +29,6 @@ class AccountServiceImplTest {
         assertNotNull(accountId);
 
 
-    }
+    }*/
 
 }

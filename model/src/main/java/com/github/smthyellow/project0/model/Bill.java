@@ -1,21 +1,19 @@
 package com.github.smthyellow.project0.model;
 
 public class Bill {
-    private int billId;
+    private long billId;
     private long amount;
-    private boolean isPaid;
 
-    public Bill(int billId, long amount, boolean isPaid) {
+    public Bill(long billId, long amount) {
         this.billId = billId;
         this.amount = amount;
-        this.isPaid = isPaid;
     }
 
-    public int getBillId() {
+    public long getBillId() {
         return billId;
     }
 
-    public void setBillId(int billId) {
+    public void setBillId(long billId) {
         this.billId = billId;
     }
 
@@ -27,11 +25,4 @@ public class Bill {
         this.amount = amount;
     }
 
-    public boolean isPaid() {
-        return isPaid;
-    }
-
-    public void setPaid(boolean paid) {
-        isPaid = paid;
-    }
 }

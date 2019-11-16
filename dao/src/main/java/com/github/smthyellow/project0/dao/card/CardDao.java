@@ -1,6 +1,6 @@
 package com.github.smthyellow.project0.dao.card;
 
-import com.github.smthyellow.project0.dao.part.entity.CardEntity;
+import com.github.smthyellow.project0.model.Account;
 import com.github.smthyellow.project0.model.Card;
 
 import java.util.List;
@@ -18,9 +18,9 @@ public interface CardDao {
 
     //void deactivateCard();
 
-    long addCard(Card card);
+    long addCard(long accountId, int cvv, long cardNumber);
 
-    List<Card> getCardByUserId(long userId);
+    List<Card> getCardList(long authUserId);
 
     Card getCardByCardId(long cardId);
 }

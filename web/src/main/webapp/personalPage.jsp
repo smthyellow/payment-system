@@ -19,8 +19,9 @@
 
 <p><a href="${pageContext.request.contextPath}/cardManagement">My cards</a></p>
 <p><a href="${pageContext.request.contextPath}/accountManagement">My accounts</a></p>
-<p><a href="${pageContext.request.contextPath}/cardManagement">Services</a></p>
+<p><a href="${pageContext.request.contextPath}/utulitymanagement">Services</a></p>
 <p><a href="${pageContext.request.contextPath}/datachange">Change personal data</a></p>
+<p><a href="${pageContext.request.contextPath}/doTransfer">Do transfer</a></p>
 
 <p><a href="${pageContext.request.contextPath}/logout">Logout</a></p>
 

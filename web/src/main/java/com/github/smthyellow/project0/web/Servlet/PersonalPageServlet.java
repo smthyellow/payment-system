@@ -23,8 +23,8 @@ public class PersonalPageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         AuthUser authUser = (AuthUser) req.getSession().getAttribute("authUser");
-        Long id = authUser.getAuthUserId();
-        User user = userService.getUserById(id);
+        long id = authUser.getAuthUserId();
+        User user = userService.getUserByAuthUserId(id);
         req.setAttribute("name", user.getFullName());
         req.setAttribute("phone", user.getPhone());
         req.setAttribute("id", user.getUserId());
@@ -32,13 +32,4 @@ public class PersonalPageServlet extends HttpServlet {
         WebUtils.forward("personalPage", req, resp);
     }
 
-    /*@Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        User user = (User) req.getSession().getAttribute("authUser");
-        req.setAttribute("name", user.getFullName());
-        req.setAttribute("phone", user.getPhone());
-        req.setAttribute("email", user.getEmail());
-
-        WebUtils.forward("personalpage", req, resp);
-    }*/
 }

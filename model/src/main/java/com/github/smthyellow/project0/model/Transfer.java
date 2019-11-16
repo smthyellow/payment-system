@@ -15,7 +15,7 @@ public class Transfer {
         this.sum = sum;
     }
 
-    public Transfer(long transferId, long fromAccountId, long toAccountId, int sum) {
+    public Transfer(long transferId, int sum) {
         this.transferId = transferId;
         this.fromAccountId = fromAccountId;
         this.toAccountId = toAccountId;

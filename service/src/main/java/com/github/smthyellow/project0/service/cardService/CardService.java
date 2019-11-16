@@ -5,9 +5,9 @@ import com.github.smthyellow.project0.model.Card;
 import java.util.List;
 
 public interface CardService {
-    List<Card> getListOfCards(Long userId);
+    List<Card> getCardsList(long authUserId);
 
-    Long addCard(Long accounId, Long userId);
+    long addCard(long accountId);
 
     Card getCardByCardId(long cardId);
 

@@ -1,26 +1,19 @@
 package com.github.smthyellow.project0.dao.account;
 
 import com.github.smthyellow.project0.model.Account;
+import com.github.smthyellow.project0.model.AuthUser;
 
 import java.util.List;
 
 public interface AccountDao {
-    long saveAccount(long authUserId, long accountNumber, int balance);
+    long saveAccount(AuthUser authUser, long accountNumber, int balance);
 
     Account getAccountByAccountId(long accountId);
 
-    //boolean checkId(Long accountId);
+    void updateAccount(Account account);
 
-    /*int plusAccountBalance();
+    List<Account> getAccountsList(long authUserId, int page);
 
-    int minusAccountBalance();
-
-    void blockAccount();
-
-    void unblockAccount();
-
-    void deactivateAccount();*/
-
-    List<Account> getAccountByUserId(long authUserId);
+    List<Account> getPage(int page, long authUserId);
 
 }

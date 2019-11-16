@@ -1,20 +1,18 @@
-package com.github.smthyellow.project0.dao.part.entity;
-import com.github.smthyellow.project0.model.User;
+package com.github.smthyellow.project0.dao.util.part.entity;
 
 import javax.persistence.*;
 
 @Entity
 @Table
 public class UserEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private long userId;
-    @Column
+
     private String firstName;
-    @Column
+
     private String lastName;
-    @Column
     private String phone;
+    private AuthUserEntity authUserEntity;
 
     public UserEntity() {
     }
@@ -32,6 +30,8 @@ public class UserEntity {
         this.phone = phone;
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public long getUserId() {
         return userId;
     }
@@ -39,7 +39,7 @@ public class UserEntity {
     public void setUserId(long userId) {
         this.userId = userId;
     }
-
+    @Column
     public String getFirstName() {
         return firstName;
     }
@@ -47,7 +47,7 @@ public class UserEntity {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-
+    @Column
     public String getLastName() {
         return lastName;
     }
@@ -56,6 +56,7 @@ public class UserEntity {
         this.lastName = lastName;
     }
 
+    @Column
     public String getPhone() {
         return phone;
     }
@@ -64,9 +65,9 @@ public class UserEntity {
         this.phone = phone;
     }
 
-    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn (name = "authUserId")
-    private AuthUserEntity authUserEntity;
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "authUserId")
+
 
     public AuthUserEntity getAuthUserEntity() {
         return authUserEntity;

@@ -5,11 +5,11 @@
                   timeToIdleSeconds="120"
                   timeToLiveSeconds="200"
                   memoryStoreEvictionPolicy="LRU"/>
-    <cache name="com.github.com.github.smthyellow.project0.dao.part.entity.AuthUserEntity"
+    <cache name="com.github.com.github.smthyellow.project0.dao.util.part.entity.AuthUserEntity"
            maxEntriesLocalHeap="20"
             eternal="true">
     </cache>
-    <cache name="com.github.com.github.smthyellow.project0.dao.part.entity.UserEntity"
+    <cache name="com.github.com.github.smthyellow.project0.dao.util.part.entity.UserEntity"
            maxEntriesLocalHeap="20"
            eternal="false"
            timeToIdleSeconds="300"

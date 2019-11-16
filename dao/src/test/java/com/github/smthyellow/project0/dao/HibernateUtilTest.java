@@ -1,6 +1,7 @@
 package com.github.smthyellow.project0.dao;
 
 import com.github.smthyellow.project0.dao.util.HibernateUtil;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import javax.persistence.EntityManager;
@@ -19,11 +20,11 @@ class HibernateUtilTest {
         assertNotNull(HibernateUtil.getSession());
     }
 
-    @Test
-    void close() {
+//    @Test
+//    void close() {
 //        HibernateUtil.close();
 //        Assertions.assertThrows(IllegalStateException.class, () -> {
 //            HibernateUtil.getEntityManager();
-//        });
-    }
+//       });
+//    }
 }

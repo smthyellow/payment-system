@@ -1,4 +1,4 @@
-package com.github.smthyellow.project0.dao.part.entity;
+package com.github.smthyellow.project0.dao.util.part.entity;
 
 import com.github.smthyellow.project0.model.Role;
 
@@ -15,6 +15,10 @@ public class AuthUserEntity {
     private String email;
     private String password;
     private Role role;
+    private UserEntity userEntity;
+    private List<AccountEntity> accountEntities = new ArrayList<>();
+    private List<BillEntity> billEntities = new ArrayList<>();
+
 
     public AuthUserEntity() {
     }
@@ -70,17 +74,8 @@ public class AuthUserEntity {
         this.role = role;
     }
 
-    private UserEntity userEntity;
-
-    private Set<CardEntity> cardEntities = new HashSet<>();
-
-    private Set<AccountEntity> accountEntities;
-
-
-    private List<BillEntity> billEntities = new ArrayList<>();
-
-    @OneToOne(mappedBy = "authUserEntity", cascade = CascadeType.ALL)
-
+    @OneToOne(mappedBy = "authUserEntity", fetch = FetchType.EAGER,
+            cascade = {CascadeType.PERSIST, CascadeType.ALL})
     public UserEntity getUserEntity() {
         return userEntity;
     }
@@ -88,22 +83,13 @@ public class AuthUserEntity {
     public void setUserEntity(UserEntity userEntity) {
         this.userEntity = userEntity;
     }
-    @OneToMany(mappedBy = "authUserEntity", cascade = CascadeType.ALL)
 
-    public Set<CardEntity> getCardEntities() {
-        return cardEntities;
-    }
-
-    public void setCardEntities(Set<CardEntity> cardEntities) {
-        this.cardEntities = cardEntities;
-    }
-    @OneToMany(mappedBy = "authUserEntity", cascade = CascadeType.ALL)
-    public Set<AccountEntity> getAccountEntities() {
+    @OneToMany (mappedBy = "authUserEntity", cascade = CascadeType.ALL, orphanRemoval = true)
+    public List<AccountEntity> getAccountEntities() {
         return accountEntities;
     }
 
-
-    public void setAccountEntities(Set<AccountEntity> accountEntities) {
+    public void setAccountEntities(List<AccountEntity> accountEntities) {
         this.accountEntities = accountEntities;
     }
 

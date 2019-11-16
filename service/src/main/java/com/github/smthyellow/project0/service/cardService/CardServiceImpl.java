@@ -17,17 +17,16 @@ public class CardServiceImpl implements CardService {
     private CardDao cardDao = CardDaoImpl.getInstance();
 
     @Override
-    public Long addCard(Long userId, Long accountId){
-        Long cardNumber = (Long) Math.round((Math.random() * 9999999999999999L) +1000000000000000L);
+    public long addCard(long accountId){
+        long cardNumber = (long) Math.round((Math.random() * 9999999999999999L) +1000000000000000L);
         short cvv = (short) ((short)(Math.random() * 999) + 100);
-        Card card = new Card( userId, cvv, cardNumber, accountId);
-        cardDao.addCard(card);
+        cardDao.addCard(accountId, cvv, cardNumber);
         return cardNumber;
 
     }
     @Override
-    public List<Card> getListOfCards(Long authUserId){
-        List<Card> cardList = cardDao.getCardByUserId(authUserId);
+    public List<Card> getCardsList(long authUserId){
+        List<Card> cardList = cardDao.getCardList(authUserId);
         return cardList;
     }
 

@@ -8,6 +8,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+<p><a href="${pageContext.request.contextPath}/personalpage">To personal page</a></p>
 <h3>Cards</h3>
 <c:choose>
     <c:when test="${cards == null}">
@@ -21,7 +22,7 @@
             </tr>
             <c:forEach items="${cards}" var="card">
                 <tr>
-                    <td>${card.cardNumber}</td>
+                    <td><input type="submit" value="Отправить"></td>
                     <td>${card.accountId}</td>
                 </tr>
             </c:forEach>

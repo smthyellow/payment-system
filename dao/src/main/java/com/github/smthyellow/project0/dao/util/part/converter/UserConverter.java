@@ -1,6 +1,6 @@
-package com.github.smthyellow.project0.dao.part.converter;
+package com.github.smthyellow.project0.dao.util.part.converter;
 
-import com.github.smthyellow.project0.dao.part.entity.UserEntity;
+import com.github.smthyellow.project0.dao.util.part.entity.UserEntity;
 import com.github.smthyellow.project0.model.User;
 
 public class UserConverter {
@@ -14,7 +14,6 @@ public class UserConverter {
         userEntity.setFirstName(user.getFirstName());
         userEntity.setLastName(user.getLastName());
         userEntity.setPhone(user.getPhone());
-
         return userEntity;
     }
 

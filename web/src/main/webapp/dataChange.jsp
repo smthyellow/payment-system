@@ -17,12 +17,14 @@
     <input id="email" type="text" name="email"> <br/>
     <label for="phone">Phone</label>
     <input id="phone" type="text" name="phone"> <br/>
-    <label for="password">Current password</label>
-    <input id="currentpassword" type="password" name="password"><br/>
+    <label for="currentPassword">Current password</label>
+    <input id="currentPassword" type="password" name="currentPassword"><br/>
     <label for="password">New password</label>
     <input id="password" type="password" name="password"><br/>
-    <label for="confirmpassword">Confirm new password</label>
+    <label for="confirmPassword">Confirm new password</label>
     <input id="confirmPassword" type="password" name="confirmPassword"><br/>
+
+    <p style="color: red">${error}</p>
 
     <input type="submit">
 

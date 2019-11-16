@@ -1,6 +1,6 @@
-package com.github.smthyellow.project0.dao.part.converter;
+package com.github.smthyellow.project0.dao.util.part.converter;
 
-import com.github.smthyellow.project0.dao.part.entity.CardEntity;
+import com.github.smthyellow.project0.dao.util.part.entity.CardEntity;
 import com.github.smthyellow.project0.model.Card;
 
 public class CardConverter {
@@ -23,7 +23,6 @@ public class CardConverter {
         if (cardEntity == null){
             return null;
         }
-
         return new Card(
                 cardEntity.getCardId(),
                 cardEntity.getAuthUserId(),
