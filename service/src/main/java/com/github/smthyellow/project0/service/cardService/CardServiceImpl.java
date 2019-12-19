@@ -1,7 +1,7 @@
 package com.github.smthyellow.project0.service.cardService;
 
-import com.github.smthyellow.project0.dao.card.CardDao;
-import com.github.smthyellow.project0.dao.card.CardDaoImpl;
+import com.github.smthyellow.project0.dao.dao.card.CardDao;
+import com.github.smthyellow.project0.dao.dao.card.CardDaoImpl;
 import com.github.smthyellow.project0.model.Card;
 
 import java.util.List;
@@ -13,7 +13,7 @@ public class CardServiceImpl implements CardService {
     public static CardService getInstance() {
         return CardServiceImpl.SingletonHolder.HOLDER_INSTANCE;
     }
-
+/*
     private CardDao cardDao = CardDaoImpl.getInstance();
 
     @Override
@@ -35,4 +35,6 @@ public class CardServiceImpl implements CardService {
         Card card = cardDao.getCardByCardId(cardId);
         return card;
     }
+
+ */
 }

@@ -1,10 +1,9 @@
 com/github/smthyellow/project0/web/WebUtils.class
-com/github/smthyellow/project0/web/Servlet/DeleteUserServlet.class
+com/github/smthyellow/project0/web/config/RootConfig.class
 com/github/smthyellow/project0/web/Filter/EncodingFilter.class
-com/github/smthyellow/project0/web/Servlet/Test.class
-com/github/smthyellow/project0/web/Servlet/UserDataChangeServlet.class
-com/github/smthyellow/project0/web/Servlet/PersonalPageServlet.class
-com/github/smthyellow/project0/web/Servlet/RegistrationServlet.class
-com/github/smthyellow/project0/web/Servlet/LogoutServlet.class
-com/github/smthyellow/project0/web/Servlet/LoginServlet.class
+com/github/smthyellow/project0/web/config/WebAppInitialiser.class
+com/github/smthyellow/project0/web/controller/MainPageController.class
 com/github/smthyellow/project0/web/Filter/AuthFilter.class
+com/github/smthyellow/project0/web/controller/PersonalPageController.class
+com/github/smthyellow/project0/web/config/WebConfig.class
+com/github/smthyellow/project0/web/controller/LoginController.class

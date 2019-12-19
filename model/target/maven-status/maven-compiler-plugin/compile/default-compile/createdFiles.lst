@@ -1,4 +1,8 @@
+com/github/smthyellow/project0/model/AuthUser.class
 com/github/smthyellow/project0/model/Account.class
+com/github/smthyellow/project0/model/Bill.class
 com/github/smthyellow/project0/model/User.class
 com/github/smthyellow/project0/model/Role.class
+com/github/smthyellow/project0/model/Status.class
 com/github/smthyellow/project0/model/Card.class
+com/github/smthyellow/project0/model/Transfer.class

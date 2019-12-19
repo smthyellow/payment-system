@@ -1,0 +1,16 @@
+<!--
+  Created by IntelliJ IDEA.
+  User: transilvania
+  Date: 18/12/2019
+  Time: 11:09
+  To change this template use File | Settings | File Templates.
+-->
+<jsp:root xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:sec="http://www.springframework.org/security/tags"
+          version="2.0">
+
+    <h3>Exchange Rates will be here.</h3>
+
+</jsp:root>

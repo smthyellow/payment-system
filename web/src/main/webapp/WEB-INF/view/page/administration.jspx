@@ -1,0 +1,18 @@
+<!--
+  Created by IntelliJ IDEA.
+  User: transilvania
+  Date: 18/12/2019
+  Time: 21:00
+  To change this template use File | Settings | File Templates.
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
+    <html>
+    <head><title>Administration</title></head>
+    <body>
+    <p><a href="${pageContext.request.contextPath}/cardAdministration">Cards</a></p>
+    <p><a href="${pageContext.request.contextPath}/accountsAdministration">Accounts</a></p>
+    <p><a href="${pageContext.request.contextPath}/utulitiestAdministration">Services</a></p>
+    <p><a href="${pageContext.request.contextPath}/transfersAdministration">Transfers</a></p>
+    </body>
+    </html>
+</jsp:root>

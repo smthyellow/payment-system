@@ -1,0 +1,21 @@
+<!--
+  Created by IntelliJ IDEA.
+  User: transilvania
+  Date: 18/12/2019
+  Time: 22:08
+  To change this template use File | Settings | File Templates.
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
+    <html>
+    <head><title>Card</title></head>
+    <body>
+    <p>Owner: ${}</p>
+    <p>Card Number: ${}</p>
+    <p>Expiry date ${}</p>
+    <p>Balance: ${}</p>
+    <p>Limit: ${}</p>
+
+    <p><a href="${pageContext.request.contextPath}/doTransfer">Transfer money</a></p>
+    </body>
+    </html>
+</jsp:root>

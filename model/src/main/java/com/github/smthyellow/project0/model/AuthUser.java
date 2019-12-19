@@ -1,22 +1,28 @@
 package com.github.smthyellow.project0.model;
 
 public class AuthUser {
-    private long authUserId;
+    private Long authUserId;
     private String email;
     private String password;
     private Role role;
+    private UserStatus status;
 
-    public AuthUser(long authUserId, String email, String password, Role role) {
+    public AuthUser() {
+    }
+
+    public AuthUser(Long authUserId, String email, String password, Role role, UserStatus status) {
         this.authUserId = authUserId;
         this.email = email;
         this.password = password;
         this.role = role;
+        this.status = status;
     }
 
-    public AuthUser(String email, String password, Role role) {
+    public AuthUser(String email, String password, Role role, UserStatus status) {
         this.email = email;
         this.password = password;
         this.role = role;
+        this.status = status;
     }
 
     public long getAuthUserId() {
@@ -51,4 +57,11 @@ public class AuthUser {
         this.role = role;
     }
 
+    public UserStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(UserStatus status) {
+        this.status = status;
+    }
 }

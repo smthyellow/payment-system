@@ -1,9 +1,10 @@
 package com.github.smthyellow.project0.service.transferService;
 
-import com.github.smthyellow.project0.dao.transfer.TransferDao;
-import com.github.smthyellow.project0.dao.transfer.TransferDaoImpl;
+import com.github.smthyellow.project0.dao.dao.transfer.TransferDao;
+import com.github.smthyellow.project0.dao.dao.transfer.TransferDaoImpl;
 import com.github.smthyellow.project0.model.Transfer;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class TransferServiceImpl implements TransferService {
@@ -16,9 +17,9 @@ public class TransferServiceImpl implements TransferService {
 
     private TransferDao transferDao = TransferDaoImpl.getInstance();
 
-    @Override
-    public void newTransfer(long fromAccountId, long toAccountId, int sum){
-        Transfer transfer = new Transfer(fromAccountId, toAccountId, sum);
+    /*@Override
+    public void newTransfer(long fromAccountId, long toAccountId, int sum, LocalDateTime date){
+        Transfer transfer = new Transfer(fromAccountId, toAccountId, sum, date);
         transferDao.newTransfer(transfer);
     }
 
@@ -29,4 +30,6 @@ public class TransferServiceImpl implements TransferService {
     public List<Transfer> getTransfersFromUser(long authUserId){
         return transferDao.getTransfersFromUser(authUserId);
     }
+
+     */
 }

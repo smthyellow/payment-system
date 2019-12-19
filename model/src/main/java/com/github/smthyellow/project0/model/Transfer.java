@@ -1,25 +1,30 @@
 package com.github.smthyellow.project0.model;
 
+import java.time.LocalDateTime;
+
 public class Transfer {
     private long transferId;
     private long fromAccountId;
     private long toAccountId;
     private int sum;
+    private LocalDateTime date;
 
     public Transfer() {
     }
 
-    public Transfer(long fromAccountId, long toAccountId, int sum) {
-        this.fromAccountId = fromAccountId;
-        this.toAccountId = toAccountId;
-        this.sum = sum;
-    }
-
-    public Transfer(long transferId, int sum) {
+    public Transfer(long transferId, long fromAccountId, long toAccountId, int sum, LocalDateTime date) {
         this.transferId = transferId;
         this.fromAccountId = fromAccountId;
         this.toAccountId = toAccountId;
         this.sum = sum;
+        this.date = date;
+    }
+
+    public Transfer(long fromAccountId, long toAccountId, int sum, LocalDateTime date) {
+        this.fromAccountId = fromAccountId;
+        this.toAccountId = toAccountId;
+        this.sum = sum;
+        this.date = date;
     }
 
     public long getTransferId() {
@@ -52,5 +57,13 @@ public class Transfer {
 
     public void setSum(int sum) {
         this.sum = sum;
+    }
+
+    public LocalDateTime getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDateTime date) {
+        this.date = date;
     }
 }

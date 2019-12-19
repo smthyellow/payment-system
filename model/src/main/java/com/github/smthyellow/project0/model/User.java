@@ -7,6 +7,9 @@ public class User {
     private String phone;
     private long authUserId;
 
+    public User() {
+    }
+
     public User(long userId, String firstName, String lastName, String phone, long authUserId) {
         this.firstName = firstName;
         this.lastName = lastName;

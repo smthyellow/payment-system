@@ -1,9 +1,7 @@
 package com.github.smthyellow.project0.service.billService;
 
-import com.github.smthyellow.project0.dao.bill.BillDao;
-import com.github.smthyellow.project0.dao.bill.BillDaoImpl;
-import com.github.smthyellow.project0.dao.util.part.converter.BillConverter;
-import com.github.smthyellow.project0.dao.util.part.entity.BillEntity;
+import com.github.smthyellow.project0.dao.dao.bill.BillDao;
+import com.github.smthyellow.project0.dao.dao.bill.BillDaoImpl;
 import com.github.smthyellow.project0.model.AuthUser;
 import com.github.smthyellow.project0.model.Bill;
 
@@ -19,7 +17,7 @@ public class BillServiceImpl implements BillService{
 
     private BillDao billDao = BillDaoImpl.getInstance();
 
-    @Override
+    /*@Override
     public List<Bill> getAllUtilities(){
         List<Bill> bills = billDao.getAllBills();
         return bills;
@@ -36,4 +34,6 @@ public class BillServiceImpl implements BillService{
         billDao.appointBillToUser(bill, authUser);
     }
 
+
+     */
 }

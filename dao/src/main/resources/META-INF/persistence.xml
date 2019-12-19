@@ -5,19 +5,19 @@
            version="2.0">
   <persistence-unit name="smthyellow" transaction-type="RESOURCE_LOCAL">
       <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-      <class>com.github.smthyellow.project0.dao.util.part.entity.UserEntity</class>
-      <class>com.github.smthyellow.project0.dao.util.part.entity.AuthUserEntity</class>
-      <class>com.github.smthyellow.project0.dao.util.part.entity.BillEntity</class>
-      <class>com.github.smthyellow.project0.dao.util.part.entity.CardEntity</class>
-      <class>com.github.smthyellow.project0.dao.util.part.entity.AccountEntity</class>
-      <class>com.github.smthyellow.project0.dao.util.part.entity.TransferEntity</class>
+      <class>com.github.smthyellow.project0.dao.entity.UserEntity</class>
+      <class>com.github.smthyellow.project0.dao.entity.AuthUserEntity</class>
+      <class>com.github.smthyellow.project0.dao.entity.BillEntity</class>
+      <class>com.github.smthyellow.project0.dao.entity.CardEntity</class>
+      <class>com.github.smthyellow.project0.dao.entity.AccountEntity</class>
+      <class>com.github.smthyellow.project0.dao.entity.TransferEntity</class>
       <exclude-unlisted-classes>true</exclude-unlisted-classes>
       <properties>
           <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
           <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/project0db?createDatabaseIfNotExist=true"/>
           <property name="javax.persistence.jdbc.user" value="root"/>
           <property name="javax.persistence.jdbc.password" value="123456"/>
-          <property name="hibernate.hbm2ddl.auto" value="update"/>
+          <property name="hibernate.hbm2ddl.auto" value="create"/>
           <property name="hibernate.use_sql_comments" value="false"/>
           <property name="hibernate.show_sql" value="true"/>
 

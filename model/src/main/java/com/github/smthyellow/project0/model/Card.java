@@ -1,25 +1,36 @@
 package com.github.smthyellow.project0.model;
 
+import java.time.LocalDate;
+
 public class Card {
     private long cardId;
     private long userId;
     private int cvv;
     private long cardNumber;
     private long accountId;
+    private LocalDate expiryDate;
+    private AccountAndCardStatus cardStatus;
 
-    public Card(long userId, int cvv, long cardNumber, long accountId) {
-        this.userId = userId;
-        this.cvv = cvv;
-        this.cardNumber = cardNumber;
-        this.accountId = accountId;
+    public Card() {
     }
 
-    public Card(long cardId, long userId, int cvv, long cardNumber, long accountId) {
+    public Card(long cardId, long userId, int cvv, long cardNumber, long accountId, LocalDate expiryDate, AccountAndCardStatus cardStatus) {
         this.cardId = cardId;
         this.userId = userId;
         this.cvv = cvv;
         this.cardNumber = cardNumber;
         this.accountId = accountId;
+        this.expiryDate = expiryDate;
+        this.cardStatus = cardStatus;
+    }
+
+    public Card(long userId, int cvv, long cardNumber, long accountId, LocalDate expiryDate, AccountAndCardStatus cardStatus) {
+        this.userId = userId;
+        this.cvv = cvv;
+        this.cardNumber = cardNumber;
+        this.accountId = accountId;
+        this.expiryDate = expiryDate;
+        this.cardStatus = cardStatus;
     }
 
     public long getUserId() {
@@ -60,5 +71,13 @@ public class Card {
 
     public void setAccountId(long accountId) {
         this.accountId = accountId;
+    }
+
+    public LocalDate getExpiryDate() {
+        return expiryDate;
+    }
+
+    public void setExpiryDate(LocalDate expiryDate) {
+        this.expiryDate = expiryDate;
     }
 }

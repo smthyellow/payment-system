@@ -1,29 +1,22 @@
 package com.github.smthyellow.project0.service.authUserService;
 
-import com.github.smthyellow.project0.dao.authUser.AuthUserDao;
-import com.github.smthyellow.project0.dao.authUser.AuthUserDaoImpl;
-import com.github.smthyellow.project0.dao.user.UserDao;
-import com.github.smthyellow.project0.dao.user.UserDaoImpl;
+import com.github.smthyellow.project0.dao.dao.authUser.AuthUserDao;
+import com.github.smthyellow.project0.dao.dao.user.UserDao;
 import com.github.smthyellow.project0.model.AuthUser;
-import com.github.smthyellow.project0.model.Role;
 import com.github.smthyellow.project0.model.User;
-import com.github.smthyellow.project0.service.userService.UserService;
-import com.github.smthyellow.project0.service.userService.UserServiceImpl;
 
 public class AuthUserServiceImpl implements AuthUserService {
 
-    private static class SingletonHolder {
-        static final AuthUserService HOLDER_INSTANCE = new AuthUserServiceImpl();
-    }
-    public static AuthUserService getInstance() {
-        return AuthUserServiceImpl.SingletonHolder.HOLDER_INSTANCE;
-    }
+    private final AuthUserDao authUserDao;
+    private final UserDao userDao;
 
-    private AuthUserDao authUserDao = AuthUserDaoImpl.getInstance();
-    private UserDao userDao = UserDaoImpl.getInstance();
+    public AuthUserServiceImpl(AuthUserDao authUserDao, UserDao userDao) {
+        this.authUserDao = authUserDao;
+        this.userDao = userDao;
+    }
 
     @Override
-    public AuthUser loginUser(String email, String password){
+    public AuthUser login(String email, String password){
         AuthUser authUser = authUserDao.getByEmail(email);
         if (authUser == null) {
             return null;
@@ -41,36 +34,31 @@ public class AuthUserServiceImpl implements AuthUserService {
     }
 
     @Override
-    public AuthUser totalSaveAuthUser(String firstName, String lastName, String email, String phone, String password){
-        AuthUser authUser = authUserDao.saveAuthUser(
-                        new AuthUser(email, password, Role.CLIENT),
-                        new User(firstName, lastName, phone));
-        return authUser;
+    public Long totalSaveAuthUser(String firstName, String lastName, String email, String phone, String password){
+        Long authUserId = authUserDao.saveAuthUser(firstName, lastName,  email, phone, password);
+        return authUserId;
     }
 
     @Override
-    public AuthUser updateAuthUser(long authUserId, String firstName, String lastName, String email, String phone, String password){
+    public void updateAuthUser(long authUserId, String firstName, String lastName, String email, String phone, String password) {
         AuthUser authUser = authUserDao.getByAuthUserId(authUserId);
         User user = userDao.getByAuthUserId(authUserId);
+        if (password != null) {
+            authUser.setPassword(password);
+        }
+        if (email != null) {
+            authUser.setEmail(email);
+        }
         if (firstName != null) {
             user.setFirstName(firstName);
         }
         if (lastName != null) {
             user.setLastName(lastName);
         }
-        if (email != null) {
-            authUser.setEmail(email);
-        }
         if (phone != null) {
             user.setPhone(phone);
         }
-        if (password != null) {
-            authUser.setPassword(password);
-        }
-
-        authUserDao.updateAuthUser(authUser,user);
-
-        return authUser;
+        authUserDao.updateAuthUser(authUser, user);
     }
 
 }

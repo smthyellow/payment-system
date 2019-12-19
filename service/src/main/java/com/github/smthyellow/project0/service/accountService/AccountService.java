@@ -7,7 +7,8 @@ import java.util.List;
 
 public interface AccountService {
 
-    long addAccount(AuthUser authUser);
+    //long addAccount(AuthUser authUser);
+    /*
 
     void plusBalance(int sum, long accountId);
 
@@ -15,9 +16,11 @@ public interface AccountService {
 
     Account getAccountByAccountId(long accountId);
 
+     */
+
     //List<Account> getAccountsList(long authUserId);
 
-    List<Account> getPage(int page, long authUserId);
+    //List<Account> getPage(int page, long authUserId);
 //
 //    void plusBalance(Account account, int sum);
 //

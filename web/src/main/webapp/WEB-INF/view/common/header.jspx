@@ -1,0 +1,25 @@
+<jsp:root xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:sec="http://www.springframework.org/security/tags"
+          version="2.0">
+
+
+    <header class="clearfix">
+        <h2><a href="${pageContext.request.contextPath}/mainPage">SmthYellowBank</a></h2>
+    </header>
+
+    <c:choose>
+        <c:when test="${authUser == null}">
+            <h5><a href="${pageContext.request.contextPath}/login">Personal page</a></h5>
+        </c:when>
+        <c:when test="${authUser != null}">
+            <c:if test="${authUser.role == 'ADMIN'}" >
+                <h5><a href="${pageContext.request.contextPath}/administration">Administration</a></h5>
+            </c:if>
+            <h5><a href="${pageContext.request.contextPath}/personalPage">${userFullName}</a></h5>
+        </c:when>
+    </c:choose>
+</jsp:root>
+
+

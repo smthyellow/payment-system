@@ -1,0 +1,35 @@
+<!--
+  Created by IntelliJ IDEA.
+  User: transilvania
+  Date: 18/12/2019
+  Time: 22:24
+  To change this template use File | Settings | File Templates.
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
+    <html>
+    <head><title>Data change</title></head>
+    <body>
+    <form action="datachange" method="post">
+        <label for="firstName">First Name</label>
+        <input id="firstName" type="text" name="firstName"/> <br/>
+        <label for="lastName">Last Name</label>
+        <input id="lastName" type="text" name="lastName"/> <br/>
+        <label for="email">Email</label>
+        <input id="email" type="text" name="email"/> <br/>
+        <label for="phone">Phone</label>
+        <input id="phone" type="text" name="phone"/> <br/>
+        <label for="password">New password</label>
+        <input id="password" type="password" name="password"/><br/>
+        <label for="confirmPassword">Confirm new password</label>
+        <input id="confirmPassword" type="password" name="confirmPassword"/><br/>
+        <label for="currentPassword">Current password</label>
+        <input id="currentPassword" type="password" name="currentPassword"/><br/>
+
+        <p style="color: red">${error}</p>
+
+        <input type="submit"/>
+
+    </form>
+    </body>
+    </html>
+</jsp:root>
