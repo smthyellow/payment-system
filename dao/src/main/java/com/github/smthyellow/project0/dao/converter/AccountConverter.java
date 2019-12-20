@@ -23,7 +23,7 @@ public class AccountConverter {
         return new Account(
                 accountEntity.getAccountId(),
                 accountEntity.getBalance(),
-                accountEntity.getLimit(),
+                accountEntity.getBorder(),
                 accountEntity.getStatus()
         );
     }

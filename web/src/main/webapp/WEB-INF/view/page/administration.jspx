@@ -9,9 +9,10 @@
     <html>
     <head><title>Administration</title></head>
     <body>
+    <p><a href="${pageContext.request.contextPath}/userAdministration">Users</a></p>
     <p><a href="${pageContext.request.contextPath}/cardAdministration">Cards</a></p>
-    <p><a href="${pageContext.request.contextPath}/accountsAdministration">Accounts</a></p>
-    <p><a href="${pageContext.request.contextPath}/utulitiestAdministration">Services</a></p>
+    <p><a href="${pageContext.request.contextPath}/accountAdministration">Accounts</a></p>
+    <p><a href="${pageContext.request.contextPath}/serviceAdministration">Services</a></p>
     <p><a href="${pageContext.request.contextPath}/transfersAdministration">Transfers</a></p>
     </body>
     </html>

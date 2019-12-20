@@ -27,6 +27,11 @@ public class Transfer {
         this.date = date;
     }
 
+    public Transfer(int sum, LocalDateTime date) {
+        this.sum = sum;
+        this.date = date;
+    }
+
     public long getTransferId() {
         return transferId;
     }

@@ -19,6 +19,9 @@ public class TransferEntity {
 
     public TransferEntity(Long fromAccountId, Long toAccountId, int sum, LocalDateTime date) {
         this.sum = sum;
+        this.fromAccountId = fromAccountId;
+        this.toAccountId = toAccountId;
+        this.date = date;
     }
 
     public TransferEntity(Long transferId, Long fromAccountId, Long toAccountId, int sum, LocalDateTime date) {
@@ -28,6 +31,11 @@ public class TransferEntity {
         this.sum = sum;
         this.date = date;
 
+    }
+
+    public TransferEntity(int sum, LocalDateTime date) {
+        this.sum = sum;
+        this.date = date;
     }
 
     @Id

@@ -6,16 +6,12 @@ import com.github.smthyellow.project0.model.Bill;
 import java.util.List;
 
 public interface BillDao {
-    //void createBill(Bill bill);
+    void createBill(Bill bill);
 
-    //List<Bill> getBillByUserId(Long userId);
+    void assignBill(Long authUserId, Long billId);
 
-    /*List<Bill> getAllBills();
+    void unassignBill(Long authUserId, Long billId);
 
-    Bill getBillById(long billId);
-
-    void appointBillToUser(Bill bill, AuthUser authUser);
-
-     */
+    void deleteBill(Long billId);
 }
 

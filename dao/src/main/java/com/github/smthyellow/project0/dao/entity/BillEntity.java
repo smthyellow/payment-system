@@ -8,6 +8,7 @@ import java.util.List;
 @Table
 public class BillEntity {
 
+    private String name;
     private long billId;
     private long amount;
     private List<AuthUserEntity> authUserEntities = new ArrayList<>();
@@ -15,11 +16,13 @@ public class BillEntity {
     public BillEntity() {
     }
 
-    public BillEntity(long amount) {
+    public BillEntity(String name, Long amount) {
+        this.name = name;
         this.amount = amount;
     }
 
-    public BillEntity(int billId, long amount) {
+    public BillEntity(String name, int billId, Long amount) {
+        this.name = name;
         this.billId = billId;
         this.amount = amount;
     }
@@ -32,6 +35,15 @@ public class BillEntity {
 
     public void setBillId(long billId) {
         this.billId = billId;
+    }
+
+    @Column
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Column

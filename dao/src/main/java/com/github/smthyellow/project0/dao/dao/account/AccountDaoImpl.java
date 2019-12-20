@@ -2,18 +2,14 @@ package com.github.smthyellow.project0.dao.dao.account;
 
 import com.github.smthyellow.project0.dao.converter.AccountConverter;
 import com.github.smthyellow.project0.dao.converter.AuthUserConverter;
-import com.github.smthyellow.project0.dao.converter.UserConverter;
-import com.github.smthyellow.project0.dao.dao.authUser.AuthUserDaoImpl;
 import com.github.smthyellow.project0.dao.entity.AccountEntity;
 import com.github.smthyellow.project0.dao.entity.AuthUserEntity;
-import com.github.smthyellow.project0.dao.entity.UserEntity;
+import com.github.smthyellow.project0.dao.entity.CardEntity;
 import com.github.smthyellow.project0.dao.repository.AccountRepository;
-import com.github.smthyellow.project0.dao.repository.AuthUserRepository;
-import com.github.smthyellow.project0.dao.repository.UserRepository;
+import com.github.smthyellow.project0.dao.repository.CardRepository;
 import com.github.smthyellow.project0.model.Account;
+import com.github.smthyellow.project0.model.AccountAndCardStatus;
 import com.github.smthyellow.project0.model.AuthUser;
-import org.hibernate.Session;
-import org.hibernate.query.Query;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,85 +17,69 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class AccountDaoImpl implements AccountDao {
-
     private static final Logger log = LoggerFactory.getLogger(AccountDaoImpl.class);
     private final AccountRepository accountRepository;
+    private final CardRepository cardRepository;
 
-    public AccountDaoImpl(AccountRepository accountRepository) {
+    public AccountDaoImpl(AccountRepository accountRepository, CardRepository cardRepository) {
         this.accountRepository = accountRepository;
-    }
-
-    /*@Override
-    public boolean checkId(Long accountId){
-        AccountEntity accountEntity;
-        try {
-            accountEntity = (AccountEntity) HibernateUtil.getSession()
-                    .createQuery("from AuthUserEntity au where au.accountId = :accountId")
-                    .setParameter("accountId", accountId)
-                    .getSingleResult();
-        } catch (NoResultException e) {
-            accountEntity = null;
-        }
-
-        return accountEntity != null;
-    }*/
-    /*@Override
-    public List<Account> getAccountsList(long authUserId, int page) {
-        Query<AccountEntity> query = HibernateUtil.getSession()
-                .createQuery("from AccountEntity au where au.authUserEntity.authUserId = :authUserId")
-                .setParameter("authUserId", authUserId);
-        List<AccountEntity> accountEntityList = query.list();
-        List<Account> accountList =
-                accountEntityList.stream()
-                        .map(AccountConverter::fromEntity)
-                        .collect(Collectors.toList());
-
-        return accountList;
+        this.cardRepository = cardRepository;
     }
 
     @Override
-    public List<Account> getPage(int page, long authUserId) {
-        int pageSize = 5;
-        Session session = HibernateUtil.getSession();
-        Query query = session.createQuery("from AccountEntity au where au.authUserEntity.authUserId = :authUserId")
-                .setParameter("authUserId", authUserId);
-
-        List<AccountEntity> accountEntityList = query
-                .setMaxResults(pageSize)
-                .setFirstResult((page - 1) * pageSize)
-                .getResultList();
-        List<Account> accountList =
-                accountEntityList.stream()
-                        .map(AccountConverter::fromEntity)
-                        .collect(Collectors.toList());
-        return accountList;
+    public void saveAccount(AuthUser authUser, Long accountNumber, int balance, int limit) {
+        AuthUserEntity authUserEntity = AuthUserConverter.toEntity(authUser);
+        AccountEntity accountEntity = new AccountEntity(accountNumber, balance, limit, AccountAndCardStatus.ACTIVE);
+        accountEntity.setAuthUserEntity(authUserEntity);
+        accountRepository.save(accountEntity);
     }
 
     @Override
-    public long saveAccount(Account account) {
-        accountRepository.save(authUserEntity);
-        userRepository.save(userEntity);
-        return accountEntity.getAccountId();
-
+    public Account getByAccountId(Long accountId) {
+        return accountRepository.findByAccountId(accountId).map(AccountConverter::fromEntity).orElse(null);
     }
 
     @Override
-    public Account getAccountByAccountId(long accountId) {
-        AccountEntity accountEntity = (AccountEntity) HibernateUtil.getSession()
-                .createQuery("from AccountEntity au where au.accountId = :accountId")
-                .setParameter("accountId", accountId).getSingleResult();
-
-        return AccountConverter.fromEntity(accountEntity);
+    public int minusBalance(Long accountId, int sum) {
+        AccountEntity accountEntity = accountRepository.findByAccountId(accountId).orElse(null);
+        int balance = accountEntity.getBalance();
+        balance =-sum;
+        accountEntity.setBalance(balance);
+        accountRepository.changeBalance(balance, accountId);
+        return balance;
     }
 
     @Override
-    public void updateAccount(Account account) {
-        AccountEntity accountEntity = AccountConverter.toEntity(account);
-        final Session session = HibernateUtil.getSession();
-        session.beginTransaction();
-        session.update(accountEntity);
-        session.getTransaction().commit();
+    public int plusBalance(Long accountId, int sum) {
+        AccountEntity accountEntity = accountRepository.findByAccountId(accountId).orElse(null);
+        int balance = accountEntity.getBalance();
+        balance =+sum;
+        accountEntity.setBalance(balance);
+        accountRepository.changeBalance(balance, accountId);
+        return balance;
     }
 
-     */
+    @Override
+    public void changeStatus(Long accountId, AccountAndCardStatus status) {
+        accountRepository.changeStatus(status, accountId);
+        List<CardEntity> cardEntities = cardRepository.findByAccountId(accountId);
+        cardEntities.stream().forEach(c -> cardRepository.changeCardStatus(status, c.getCardId()));
+    }
+
+    @Override
+    public List getByAuthUserId(Long authUserId) {
+        List<AccountEntity> accounts = accountRepository.findByAuthUserEntity(authUserId);
+        return accounts.stream().map(AccountConverter::fromEntity).collect(Collectors.toList());
+    }
+
+    @Override
+    public boolean compareBalanceWithLimit(Long accountId) {
+        AccountEntity accountEntity = accountRepository.findByAccountId(accountId).orElse(null);
+        return accountEntity.getBalance() > accountEntity.getBorder();
+    }
+
+    @Override
+    public void changeLimit(Long accountId, int limit) {
+        accountRepository.changeLimit(limit, accountId);
+    }
 }

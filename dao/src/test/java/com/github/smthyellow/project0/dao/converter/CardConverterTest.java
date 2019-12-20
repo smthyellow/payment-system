@@ -18,7 +18,6 @@ class CardConverterTest {
         final CardEntity cardEntity = new CardEntity();
         cardEntity.setCardId(1L);
         cardEntity.setAccountId(2L);
-        cardEntity.setAuthUserId(3L);
         cardEntity.setCvv(4);
 
         final Card card = CardConverter.fromEntity(cardEntity);
@@ -26,7 +25,6 @@ class CardConverterTest {
         assertNotNull(card);
         assertEquals(card.getCardId(), cardEntity.getCardId());
         assertEquals(card.getAccountId(), cardEntity.getAccountId());
-        assertEquals(card.getUserId(), cardEntity.getAuthUserId());
         assertEquals(card.getCvv(), cardEntity.getCvv());
     }
 

@@ -8,7 +8,5 @@ public interface UserDao {
 
     User getByAuthUserId(long id);
 
-    //void deleteUser(User user);
-
     void updateUser(User user);
 }

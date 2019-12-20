@@ -1,5 +1,8 @@
 package com.github.smthyellow.project0.dao.dao.bill;
 
+import com.github.smthyellow.project0.dao.repository.AuthUserRepository;
+import com.github.smthyellow.project0.dao.repository.BillRepository;
+import com.github.smthyellow.project0.dao.repository.UserRepository;
 import com.github.smthyellow.project0.dao.toDelete.HibernateUtil;
 import com.github.smthyellow.project0.dao.converter.AuthUserConverter;
 import com.github.smthyellow.project0.dao.converter.BillConverter;
@@ -13,17 +16,52 @@ import javax.persistence.EntityManager;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class BillDaoImpl implements BillDao{
+/*
+TODO: deleteBill
 
-    public static class Singleton {
-        static BillDao HOLDER_INSTANCE = new BillDaoImpl();
+ */
+
+public class BillDaoImpl implements BillDao{
+    private final BillRepository billRepository;
+    private  final AuthUserRepository authUserRepository;
+
+    public BillDaoImpl(BillRepository billRepository, AuthUserRepository authUserRepository) {
+        this.billRepository = billRepository;
+        this.authUserRepository = authUserRepository;
     }
 
-    public static BillDao getInstance() {
-        return BillDaoImpl.Singleton.HOLDER_INSTANCE;
+    @Override
+    public void createBill(Bill bill) {
+        BillEntity billEntity = BillConverter.toEntity(bill);
+        billRepository.save(billEntity);
+    }
+
+    @Override
+    public void assignBill(Long authUserId, Long billId) {
+        BillEntity billEntity = billRepository.findByBillId(billId).orElse(null);
+        AuthUserEntity authUserEntity = authUserRepository.findByAuthUserId(authUserId).orElse(null);
+        List<BillEntity> billEntities = new ArrayList<>();
+        billEntities.add(billEntity);
+        authUserEntity.setBillEntities(billEntities);
+        authUserRepository.save(authUserEntity);
+    }
+
+    @Override
+    public void unassignBill(Long authUserId, Long billId) {
+        BillEntity billEntity = billRepository.findByBillId(billId).orElse(null);
+        AuthUserEntity authUserEntity = authUserRepository.findByAuthUserId(authUserId).orElse(null);
+        List<BillEntity> billEntities = authUserEntity.getBillEntities();
+        billEntities.remove(billEntity);
+        authUserRepository.save(authUserEntity);
+    }
+
+    @Override
+    public void deleteBill(Long billId) {
+
     }
 
     /*@Override

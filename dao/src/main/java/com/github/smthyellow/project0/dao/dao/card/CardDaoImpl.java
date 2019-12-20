@@ -2,82 +2,106 @@ package com.github.smthyellow.project0.dao.dao.card;
 
 import com.github.smthyellow.project0.dao.dao.account.AccountDao;
 import com.github.smthyellow.project0.dao.dao.account.AccountDaoImpl;
+import com.github.smthyellow.project0.dao.repository.AccountRepository;
+import com.github.smthyellow.project0.dao.repository.AuthUserRepository;
+import com.github.smthyellow.project0.dao.repository.CardRepository;
+import com.github.smthyellow.project0.dao.repository.UserRepository;
 import com.github.smthyellow.project0.dao.toDelete.HibernateUtil;
 import com.github.smthyellow.project0.dao.converter.AccountConverter;
 import com.github.smthyellow.project0.dao.converter.CardConverter;
 import com.github.smthyellow.project0.dao.entity.AccountEntity;
 import com.github.smthyellow.project0.dao.entity.CardEntity;
+import com.github.smthyellow.project0.model.AccountAndCardStatus;
 import com.github.smthyellow.project0.model.Card;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class CardDaoImpl implements CardDao{
     private static final Logger log = LoggerFactory.getLogger(CardDaoImpl.class);
 
-    public static class Singleton {
-        static CardDao HOLDER_INSTANCE = new CardDaoImpl();
+    private final CardRepository cardRepository;
+    private final AccountRepository accountRepository;
+
+    public CardDaoImpl(CardRepository cardRepository, AccountRepository accountRepository) {
+        this.cardRepository = cardRepository;
+        this.accountRepository = accountRepository;
     }
 
-    /*@Override
-
-
-    public long addCard(long accountId, int cvv, long cardNumber){
-        CardEntity cardEntity = new CardEntity(cvv, cardNumber);
-        AccountEntity accountEntity = AccountConverter.toEntity(accountDao.getAccountByAccountId(accountId));
-        final Session session = HibernateUtil.getSession();
-        session.beginTransaction();
+    @Override
+    public void addCard(int cvv, Long cardNumber, Long accountId, LocalDate expiryDate) {
+        CardEntity cardEntity = new CardEntity(cvv, cardNumber, expiryDate, AccountAndCardStatus.ACTIVE);
+        AccountEntity accountEntity = accountRepository.findByAccountId(accountId).orElse(null);
         cardEntity.setAccountEntity(accountEntity);
-        accountEntity.getCardEntities().add(cardEntity);
-        session.save(accountEntity);
-        session.getTransaction().commit();
-
-        return accountEntity.getAccountId();
-    }
-  //  @Override
-//    public List<Card> getCardByAuthUserId(long authUserId){
-//        Query<CardEntity> query = HibernateUtil.getSession()
-//                .createQuery(
-//                        "from CardEntity ce " +
-//                        "join AccountEntity ae " +
-//                        "where ae.authUserEntity.authUserId = :authUserId")
-//                .setParameter("authUserId", authUserId);
-//        List <CardEntity> cardEntityList = query.list();
-//        List<Card> cardList = cardEntityList.stream().map(CardConverter::fromEntity).collect(Collectors.toList());
-//
-//        return cardList;
-//    }
-    @Override
-    public List<Card> getCardList(long authUserId) {
-        Query<CardEntity> query = HibernateUtil.getSession()
-                .createQuery(
-                        "from CardEntity ce " +
-                        "join AccountEntity ae " +
-                        "where ae.authUserEntity.authUserId = :authUserId")
-                .setParameter("authUserId", authUserId)
-                .setFirstResult(0)
-                .setMaxResults(5);
-        List<CardEntity> cardEntityList = query.getResultList();
-        List<Card> cardList =
-                cardEntityList.stream().
-                        map(CardConverter::fromEntity).
-                        collect(Collectors.toList());
-
-        return cardList;
+        cardRepository.save(cardEntity);
     }
 
     @Override
-    public Card getCardByCardId(long cardId){
-        CardEntity cardEntity = (CardEntity) HibernateUtil.getSession()
-                .createQuery("from CardEntity au where au.cardId = :cardId")
-                .setParameter("cardId", cardId).getSingleResult();
-
-        return CardConverter.fromEntity(cardEntity);
+    public Card getByCardId(Long cardId) {
+        Card card = CardConverter.fromEntity(cardRepository.findByCardId(cardId).orElse(null));
+        return card;
     }
 
-     */
+    @Override
+    public int plusBalance(int sum, Long cardId) {
+        AccountEntity accountEntity = cardRepository.findByCardId(cardId).orElse(null).getAccountEntity();
+        int actualBalance = accountEntity.getBalance() + sum;
+        accountRepository.changeBalance(actualBalance, accountEntity.getAccountId());
+        return actualBalance;
+    }
+
+    @Override
+    public int minusBalance(int sum, Long cardId) {
+        AccountEntity accountEntity = cardRepository.findByCardId(cardId).orElse(null).getAccountEntity();
+        int actualBalance = accountEntity.getBalance() - sum;
+        accountRepository.changeBalance(actualBalance, accountEntity.getAccountId());
+        return actualBalance;
+    }
+
+    @Override
+    public void changeStatus(Long cardId, AccountAndCardStatus status) {
+        cardRepository.changeCardStatus(status, cardId);
+    }
+
+    @Override
+    public List<Card> getByAuthUserId(Long authUserId) {
+        List<AccountEntity> accountEntities = accountRepository.findByAuthUserEntity(authUserId);
+        List<Long> accountIds = accountEntities.stream()
+                .map(entity -> entity.getAccountId())
+                .collect(Collectors.toList());
+
+        List<Card> cards = cardRepository.findByAccountIdIn(accountIds).stream()
+                .map(cardEntity -> CardConverter.fromEntity(cardEntity))
+                .collect(Collectors.toList());
+        return cards;
+    }
+
+    @Override
+    public void changeLimit(Long cardId, int limit) {
+        Long accountId = cardRepository.findByCardId(cardId).orElse(null).getAccountId();
+        accountRepository.changeLimit(limit, accountId);
+    }
+
+    @Override
+    public void blockCard(Long cardId, AccountAndCardStatus status) {
+        cardRepository.changeCardStatus(status, cardId);
+        Long accountId = cardRepository.findByCardId(cardId).orElse(null).getAccountId();
+        accountRepository.changeStatus(status, accountId);
+    }
+
+    @Override
+    public List<Card> getByAccountId(Long accountId) {
+        List<Card> cards = cardRepository.findByAccountId(accountId).stream()
+                .map(cardEntity -> CardConverter.fromEntity(cardEntity))
+                .collect(Collectors.toList());
+        return cards;
+    }
 }

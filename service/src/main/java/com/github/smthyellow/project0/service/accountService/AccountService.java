@@ -7,12 +7,14 @@ import java.util.List;
 
 public interface AccountService {
 
-    //long addAccount(AuthUser authUser);
+    void addAccount(AuthUser authUser, int balance, int limit);
+
+    int minusBalance(int sum, long accountId);
     /*
 
     void plusBalance(int sum, long accountId);
 
-    void minusBalance(int sum, long accountId);
+
 
     Account getAccountByAccountId(long accountId);
 

@@ -10,10 +10,10 @@ import java.util.List;
 @Table
 public class AccountEntity {
 
-    private long accountId;
-    private long accountNumber;
+    private Long accountId;
+    private Long accountNumber;
     private int balance;
-    private int limit;
+    private int border;
     private AccountAndCardStatus status;
     private AuthUserEntity authUserEntity;
     private List<CardEntity> cardEntities = new ArrayList<>();
@@ -23,22 +23,22 @@ public class AccountEntity {
     public AccountEntity() {
     }
 
-    public AccountEntity(long accountNumber, int balance, int limit) {
+    public AccountEntity(Long accountNumber, int balance, int border, AccountAndCardStatus status) {
         this.accountNumber = accountNumber;
         this.balance = balance;
-        this.limit = limit;
+        this.border = border;
     }
 
-    public AccountEntity(long accountId, long accountNumber, int balance, int limit) {
+    public AccountEntity(Long accountId, Long accountNumber, int balance, int border, AccountAndCardStatus status) {
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.accountId = accountId;
-        this.limit = limit;
+        this.border = border;
     }
 
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Id
-    public long getAccountId() {
+    public Long getAccountId() {
         return accountId;
     }
 
@@ -47,7 +47,7 @@ public class AccountEntity {
     }
 
     @Column
-    public long getAccountNumber() {
+    public Long getAccountNumber() {
         return accountNumber;
     }
 
@@ -65,12 +65,12 @@ public class AccountEntity {
     }
 
     @Column
-    public int getLimit() {
-        return limit;
+    public int getBorder() {
+        return border;
     }
 
-    public void setLimit(int limit) {
-        this.limit = limit;
+    public void setBorder(int limit) {
+        this.border = limit;
     }
 
     @Column

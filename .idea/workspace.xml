@@ -7,266 +7,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89a1cb85-9d04-4e01-8d09-c5772c72ed08" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__classworlds_classworlds_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jtidy_jtidy_4aug2000r7_dev.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_core_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_decoration_model_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_apt_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_fml_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_xdoc_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_xhtml_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_sink_api_1_0_alpha_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_site_renderer_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_manager_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_core_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_error_diagnostics_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_monitor_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_descriptor_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_parameter_documenter_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_registry_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_profile_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_project_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_reporting_maven_reporting_api_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_reporting_maven_reporting_impl_2_0_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_maven_invoker_2_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_file_1_0_beta_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_lightweight_1_0_beta_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_shared_1_0_beta_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_1_0_beta_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_ssh_1_0_beta_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_ssh_common_1_0_beta_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_ssh_external_1_0_beta_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_api_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_autotag_core_runtime_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_core_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_el_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_jsp_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_api_1_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_jsp_1_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_servlet_1_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_servlet_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_template_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_cobertura_maven_plugin_2_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_container_default_1_0_alpha_9_stable_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_i18n_1_0_beta_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interactivity_api_1_0_alpha_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_velocity_1_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom_1_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__urbanophile_java_getopt_1_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/AccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/AuthUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/BillRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/CardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/TransferRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/DaoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/DatasourseSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/HibernateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/SettingsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/datasourse.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/hibernate.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/AccountAndCardStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/UserStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/ServiceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/config/RootConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/config/WebAppInitialiser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/controller/AdministrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/controller/CardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/controller/MainPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/controller/PersonalPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/controller/RegistrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/tiles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/common/footer.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/common/header.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/layouts/default.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/accounts.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/administration.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/card.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/login.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/mainPage.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/personalDataChange.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/personalPage.jspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/registration.jspx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/18582072-c1b7-45a6-90b0-4146ebacad1d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18582072-c1b7-45a6-90b0-4146ebacad1d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/dao.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/toDelete/DataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/account/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/account/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/account/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/account/AccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/authUser/AuthUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/authUser/AuthUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/authUser/AuthUserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/authUser/AuthUserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/bill/BillDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/bill/BillDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/bill/BillDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/bill/BillDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/card/CardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/card/CardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/card/CardDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/card/CardDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/transfer/TransferDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/transfer/TransferDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/transfer/TransferDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/transfer/TransferDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/user/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/user/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/user/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/toDelete/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/part/converter/AccountConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/converter/AccountConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/part/converter/AuthUserConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/converter/AuthUserConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/part/converter/BillConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/converter/BillConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/part/converter/CardConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/converter/CardConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/part/converter/TransferConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/converter/TransferConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/part/converter/UserConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/converter/UserConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/part/entity/AccountEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/AccountEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/part/entity/AuthUserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/AuthUserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/part/entity/BillEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/BillEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/part/entity/CardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/CardEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/part/entity/TransferEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/TransferEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/part/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/ehcache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/ehcache.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/HibernateUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/HibernateUtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/account/AccountDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/dao/account/AccountDaoImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/authUser/AuthUserDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/dao/authUser/AuthUserDaoImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/card/CardDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/dao/card/CardDaoImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/util/part/converter/AccountConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/converter/AccountConverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/util/part/converter/AuthUserConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/converter/AuthUserConverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/util/part/converter/BillConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/converter/BillConverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/util/part/converter/CardConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/converter/CardConverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/util/part/converter/TransferConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/converter/TransferConverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/util/part/converter/UserConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/converter/UserConverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/github/smthyellow/project0/dao/DataSource$SingletonHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/github/smthyellow/project0/dao/DataSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/github/smthyellow/project0/dao/user/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/github/smthyellow/project0/dao/user/UserDaoImpl$Singleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/github/smthyellow/project0/dao/user/UserDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/dao-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/AuthUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/converter/AccountConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/converter/AccountConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/converter/CardConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/converter/CardConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/account/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/account/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/account/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/account/AccountDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/authUser/AuthUserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/authUser/AuthUserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/bill/BillDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/bill/BillDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/bill/BillDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/bill/BillDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/card/CardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/card/CardDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/card/CardDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/card/CardDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/transfer/TransferDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/transfer/TransferDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/transfer/TransferDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/transfer/TransferDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/AccountEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/AccountEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/BillEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/BillEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/CardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/CardEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/TransferEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/entity/TransferEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/AuthUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/AuthUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/BillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/BillRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/CardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/CardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/TransferRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/TransferRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/DaoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/util/DaoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/datasourse.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/datasourse.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/converter/CardConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/test/java/com/github/smthyellow/project0/dao/converter/CardConverterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/Transfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/github/smthyellow/project0/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/github/smthyellow/project0/model/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/github/smthyellow/project0/model/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/github/smthyellow/project0/model/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/github/smthyellow/project0/model/Card.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/com/github/smthyellow/project0/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/com/github/smthyellow/project0/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/model-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root.iml" beforeDir="false" afterPath="$PROJECT_DIR$/root.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/accountService/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/accountService/AccountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/accountService/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/accountService/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/authUserService/AuthUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/authUserService/AuthUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/authUserService/AuthUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/authUserService/AuthUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/billService/BillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/billService/BillService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/billService/BillServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/billService/BillServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/cardService/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/cardService/CardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/cardService/CardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/cardService/CardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/transferService/TransferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/transferService/TransferService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/transferService/TransferServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/transferService/TransferServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/userService/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/userService/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/userService/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/github/smthyellow/project0/service/userService/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/test/java/com/github/smthyellow/project0/service/accountService/AccountServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/com/github/smthyellow/project0/service/accountService/AccountServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/test/java/com/github/smthyellow/project0/service/authUserService/AuthUserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/com/github/smthyellow/project0/service/authUserService/AuthUserServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/Servlet/AccountManagementServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/Servlet/CardManagementServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/Servlet/DeleteUserServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/Servlet/DoTransferServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/Servlet/LoginServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/Servlet/LogoutServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/Servlet/PersonalPageServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/Servlet/RegistrationServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/Servlet/SuccessfulTransferServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/Servlet/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/Servlet/UserDataChangeServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/Servlet/UtilityManagementServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/accountManagement.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/cardManagement.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/dataChange.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/deleteUser.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/doTransfer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/personalPage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/registration.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/succesfulTransfer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/utilitymanagement.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/github/smthyellow/project0/web/Servlet/DeleteUserServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/github/smthyellow/project0/web/Servlet/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/github/smthyellow/project0/web/Servlet/LogoutServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/github/smthyellow/project0/web/Servlet/PersonalPageServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/github/smthyellow/project0/web/Servlet/RegistrationServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/github/smthyellow/project0/web/Servlet/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/github/smthyellow/project0/web/Servlet/UserDataChangeServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/com/github/smthyellow/project0/web/Servlet/DeleteUserServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/com/github/smthyellow/project0/web/Servlet/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/com/github/smthyellow/project0/web/Servlet/LogoutServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/com/github/smthyellow/project0/web/Servlet/PersonalPageServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/com/github/smthyellow/project0/web/Servlet/RegistrationServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/com/github/smthyellow/project0/web/Servlet/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/classes/com/github/smthyellow/project0/web/Servlet/UserDataChangeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/administration.jspx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/page/administration.jspx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/model-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/WEB-INF/lib/service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/dataChange.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/deleteUser.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/personalPage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0-SNAPSHOT/registration.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +66,25 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="project0db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="project1db: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="project1db: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="AuthUserEntity_BillEntity: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -339,7 +136,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/dao/src/main/resources" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../servlet-example" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -689,7 +486,14 @@
       <workItem from="1576663283722" duration="286000" />
       <workItem from="1576663910449" duration="6446000" />
       <workItem from="1576673798934" duration="14084000" />
-      <workItem from="1576747341663" duration="371000" />
+      <workItem from="1576747341663" duration="3905000" />
+      <workItem from="1576768813552" duration="3129000" />
+      <workItem from="1576788552603" duration="3210000" />
+      <workItem from="1576829493828" duration="12817000" />
+      <workItem from="1576846117752" duration="3146000" />
+      <workItem from="1576857322151" duration="485000" />
+      <workItem from="1576857921542" duration="4876000" />
+      <workItem from="1576873674046" duration="2467000" />
     </task>
     <task id="LOCAL-00001" summary="Entities are created.">
       <created>1572524190085</created>
@@ -705,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573228370983</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="19.12 commit">
+      <created>1576747859378</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576747859378</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -727,7 +538,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Entities are created." />
     <MESSAGE value="After relation fixing." />
-    <option name="LAST_COMMIT_MESSAGE" value="After relation fixing." />
+    <MESSAGE value="19.12 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="19.12 commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="311" y="58" width="800" height="677" key="#Assign_Data_Sources" timestamp="1576006274240">
@@ -742,14 +554,14 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="154" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1576664709438" />
-    <state x="174" y="54" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576536053386">
+    <state x="174" y="54" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576858454513">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="174" y="54" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1576536053386" />
-    <state x="524" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1576700786334">
+    <state x="174" y="54" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1576858454513" />
+    <state x="524" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1576876625342">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="524" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1576700786334" />
+    <state x="524" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1576876625342" />
     <state x="136" y="324" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1575832626131">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -762,10 +574,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="469" y="278" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/67.27.1299.741@67.27.1299.741" timestamp="1575832629429" />
-    <state x="369" y="27" width="685" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576699781623">
+    <state x="369" y="27" width="685" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576859000200">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="369" y="27" width="685" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1299.741@67.27.1299.741" timestamp="1576699781623" />
+    <state x="369" y="27" width="685" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1299.741@67.27.1299.741" timestamp="1576859000200" />
     <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576072647612">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -774,62 +586,66 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="365" y="43" width="692" height="707" key="#com.intellij.unscramble.UnscrambleDialog/67.27.1299.741@67.27.1299.741" timestamp="1576519888149" />
+    <state x="67" y="27" width="1289" height="741" key="CommitChangelistDialog2" timestamp="1576747853103">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="67" y="27" width="1289" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1576747853103" />
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog" timestamp="1576531276855">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="167" y="125" width="1099" height="543" key="DiffContextDialog/67.27.1299.741@67.27.1299.741" timestamp="1576531276855" />
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576531647005">
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576845329403">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1576531647005" />
-    <state width="1023" height="239" key="GridCell.Tab.0.bottom" timestamp="1576703329469">
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1576845329403" />
+    <state width="1023" height="290" key="GridCell.Tab.0.bottom" timestamp="1576862808266">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1023" height="239" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576703329469" />
-    <state width="1023" height="239" key="GridCell.Tab.0.center" timestamp="1576703329467">
+    <state width="1023" height="290" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576862808266" />
+    <state width="1023" height="290" key="GridCell.Tab.0.center" timestamp="1576862808265">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1023" height="239" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1576703329467" />
-    <state width="1023" height="239" key="GridCell.Tab.0.left" timestamp="1576703329465">
+    <state width="1023" height="290" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1576862808265" />
+    <state width="1023" height="290" key="GridCell.Tab.0.left" timestamp="1576862808263">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1023" height="239" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1576703329465" />
-    <state width="1023" height="239" key="GridCell.Tab.0.right" timestamp="1576703329468">
+    <state width="1023" height="290" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1576862808263" />
+    <state width="1023" height="290" key="GridCell.Tab.0.right" timestamp="1576862808265">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1023" height="239" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1576703329468" />
-    <state width="1023" height="239" key="GridCell.Tab.1.bottom" timestamp="1576703329473">
+    <state width="1023" height="290" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1576862808265" />
+    <state width="1023" height="290" key="GridCell.Tab.1.bottom" timestamp="1576862808268">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1023" height="239" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576703329473" />
-    <state width="1023" height="239" key="GridCell.Tab.1.center" timestamp="1576703329473">
+    <state width="1023" height="290" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576862808268" />
+    <state width="1023" height="290" key="GridCell.Tab.1.center" timestamp="1576862808267">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1023" height="239" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1576703329473" />
-    <state width="1023" height="239" key="GridCell.Tab.1.left" timestamp="1576703329472">
+    <state width="1023" height="290" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1576862808267" />
+    <state width="1023" height="290" key="GridCell.Tab.1.left" timestamp="1576862808267">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1023" height="239" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1576703329472" />
-    <state width="1023" height="239" key="GridCell.Tab.1.right" timestamp="1576703329473">
+    <state width="1023" height="290" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1576862808267" />
+    <state width="1023" height="290" key="GridCell.Tab.1.right" timestamp="1576862808267">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1023" height="239" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1576703329473" />
-    <state width="1023" height="239" key="GridCell.Tab.2.bottom" timestamp="1576703329472">
+    <state width="1023" height="290" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1576862808267" />
+    <state width="1023" height="290" key="GridCell.Tab.2.bottom" timestamp="1576862808270">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1023" height="239" key="GridCell.Tab.2.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576703329472" />
-    <state width="1023" height="239" key="GridCell.Tab.2.center" timestamp="1576703329471">
+    <state width="1023" height="290" key="GridCell.Tab.2.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576862808270" />
+    <state width="1023" height="290" key="GridCell.Tab.2.center" timestamp="1576862808269">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1023" height="239" key="GridCell.Tab.2.center/67.27.1299.741@67.27.1299.741" timestamp="1576703329471" />
-    <state width="1023" height="239" key="GridCell.Tab.2.left" timestamp="1576703329470">
+    <state width="1023" height="290" key="GridCell.Tab.2.center/67.27.1299.741@67.27.1299.741" timestamp="1576862808269" />
+    <state width="1023" height="290" key="GridCell.Tab.2.left" timestamp="1576862808268">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1023" height="239" key="GridCell.Tab.2.left/67.27.1299.741@67.27.1299.741" timestamp="1576703329470" />
-    <state width="1023" height="239" key="GridCell.Tab.2.right" timestamp="1576703329472">
+    <state width="1023" height="290" key="GridCell.Tab.2.left/67.27.1299.741@67.27.1299.741" timestamp="1576862808268" />
+    <state width="1023" height="290" key="GridCell.Tab.2.right" timestamp="1576862808269">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1023" height="239" key="GridCell.Tab.2.right/67.27.1299.741@67.27.1299.741" timestamp="1576703329472" />
+    <state width="1023" height="290" key="GridCell.Tab.2.right/67.27.1299.741@67.27.1299.741" timestamp="1576862808269" />
     <state width="1023" height="239" key="GridCell.Tab.3.bottom" timestamp="1576679014051">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -846,6 +662,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="1023" height="239" key="GridCell.Tab.3.right/67.27.1299.741@67.27.1299.741" timestamp="1576679014050" />
+    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1576858372716">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="263" height="500" key="HiddenNamespacesPopup/67.27.1299.741@67.27.1299.741" timestamp="1576858372716" />
     <state x="249" y="54" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1576237471282">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -854,31 +674,42 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="199" y="27" width="1024" height="741" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1576503879418" />
-    <state x="613" y="293" width="367" height="230" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1576532248800">
+    <state width="498" height="475" key="SwitcherDM" timestamp="1576858632509">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="613" y="293" width="367" height="230" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/67.27.1299.741@67.27.1299.741" timestamp="1576532248800" />
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1576673842628">
+    <state width="498" height="475" key="SwitcherDM/67.27.1299.741@67.27.1299.741" timestamp="1576858632509" />
+    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1576748047278">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1576673842628" />
+    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1576748047278" />
+    <state x="613" y="293" width="367" height="230" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1576858224664">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="613" y="293" width="367" height="230" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/67.27.1299.741@67.27.1299.741" timestamp="1576858224664" />
+    <state x="568" y="162" width="287" height="468" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1576858476456">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="568" y="162" width="287" height="468" key="com.intellij.database.view.ui.DbObjectDialog/67.27.1299.741@67.27.1299.741" timestamp="1576858476456" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1576873682503">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1576873682503" />
     <state x="208" y="90" width="1006" height="612" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1576585823577">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="208" y="90" width="1006" height="612" key="com.intellij.javaee.MapExternalResourceDialog/67.27.1299.741@67.27.1299.741" timestamp="1576585823577" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1576665409255">
+    <state x="484" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576788847727">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1576665409255" />
+    <state x="484" y="316" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1299.741@67.27.1299.741" timestamp="1576788847727" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1576846278236">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1576846278236" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dao/src/main/java/com/github/smthyellow/project0/dao/dao/card/CardDaoImpl.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/web/src/main/java/com/github/smthyellow/project0/web/controller/RegistrationController.java</url>
           <line>40</line>

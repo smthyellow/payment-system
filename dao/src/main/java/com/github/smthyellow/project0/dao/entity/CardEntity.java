@@ -13,7 +13,6 @@ import java.time.LocalDate;
 public class CardEntity {
 
     private long cardId;
-    private long authUserId;
     private int cvv;
     private long cardNumber;
     private long accountId;
@@ -24,23 +23,18 @@ public class CardEntity {
     public CardEntity() {
     }
 
-    public CardEntity(long authUserId, int cvv, long cardNumber, long accountId,
+    public CardEntity(int cvv, long cardNumber,
                       LocalDate expiryDate, AccountAndCardStatus cardStatus) {
-        this.authUserId = authUserId;
         this.cvv = cvv;
         this.cardNumber = cardNumber;
-        this.accountId = accountId;
         this.expiryDate = expiryDate;
         this.cardStatus = cardStatus;
     }
 
-    public CardEntity(long cardId, long authUserId, int cvv, long cardNumber, long accountId,
-                      LocalDate expiryDate, AccountAndCardStatus cardStatus) {
+    public CardEntity(long cardId, int cvv, long cardNumber, LocalDate expiryDate, AccountAndCardStatus cardStatus) {
         this.cardId = cardId;
-        this.authUserId = authUserId;
         this.cvv = cvv;
         this.cardNumber = cardNumber;
-        this.accountId = accountId;
         this.expiryDate = expiryDate;
         this.cardStatus = cardStatus;
     }
@@ -54,15 +48,6 @@ public class CardEntity {
 
     public void setCardId(long cardId) {
         this.cardId = cardId;
-    }
-
-    @Column(insertable = false, updatable = false)
-    public long getAuthUserId() {
-        return authUserId;
-    }
-
-    public void setAuthUserId(long authUserId) {
-        this.authUserId = authUserId;
     }
 
     @Column (updatable = false)

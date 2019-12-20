@@ -1,27 +1,28 @@
 package com.github.smthyellow.project0.dao.dao.card;
 
+import com.github.smthyellow.project0.dao.entity.CardEntity;
+import com.github.smthyellow.project0.model.AccountAndCardStatus;
 import com.github.smthyellow.project0.model.Card;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public interface CardDao {
-    //int plusCardBalance();
+    void addCard(int cvv, Long cardNumber, Long accountId, LocalDate expiryDate);
 
-    //int minusCardBalance();
+    Card getByCardId(Long cardId);
 
-    //void blockCard();
+    int plusBalance(int sum, Long cardId);
 
-    //void unblockCard();
+    int minusBalance(int sum, Long cardId);
 
-    //boolean limitReached();
+    void changeStatus(Long cardId, AccountAndCardStatus status);
 
-    //void deactivateCard();
+    List <Card> getByAuthUserId(Long authUserId);
 
-   /* long addCard(long accountId, int cvv, long cardNumber);
+    void changeLimit(Long cardId, int limit);
 
-    List<Card> getCardList(long authUserId);
+    void blockCard(Long cardId, AccountAndCardStatus status);
 
-    Card getCardByCardId(long cardId);
-
-    */
+    List<Card> getByAccountId(Long accountId);
 }

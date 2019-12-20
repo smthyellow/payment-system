@@ -12,7 +12,6 @@ public class CardConverter {
         final CardEntity cardEntity = new CardEntity();
 
         cardEntity.setCardId(card.getCardId());
-        cardEntity.setAuthUserId(card.getUserId());
         cardEntity.setCvv(card.getCvv());
         cardEntity.setCardNumber(card.getCardNumber());
         cardEntity.setAccountId(card.getAccountId());
@@ -25,7 +24,6 @@ public class CardConverter {
         }
         return new Card(
                 cardEntity.getCardId(),
-                cardEntity.getAuthUserId(),
                 cardEntity.getCvv(),
                 cardEntity.getCardNumber(),
                 cardEntity.getAccountId(),

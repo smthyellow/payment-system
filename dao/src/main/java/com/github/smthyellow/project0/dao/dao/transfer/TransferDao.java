@@ -5,11 +5,17 @@ import com.github.smthyellow.project0.model.Transfer;
 import java.util.List;
 
 public interface TransferDao {
-    /*void newTransfer(Transfer transfer);
+    void addTransfer(int sum, Long fromAccount, Long toAccount);
 
-    List<Transfer> getTransfersToUser(long authUserId);
+    List<Transfer> getByFromAccount(Long fromAccountId);
 
-    List<Transfer> getTransfersFromUser(long authUserId);
+    List<Transfer> getByToAccount(Long toAccountId);
 
-     */
+    List<Transfer> getByToAuthUser(Long authUserId);
+
+    List<Transfer> getByFromAuthUser(Long authUserId);
+
+    //List<Transfer> getTransfersToUser(long authUserId);
+
+    //List<Transfer> getTransfersFromUser(long authUserId);
 }

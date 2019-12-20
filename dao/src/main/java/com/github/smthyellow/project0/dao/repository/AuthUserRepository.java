@@ -5,7 +5,6 @@ import com.github.smthyellow.project0.model.UserStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 
 import java.util.Optional;
 
@@ -18,6 +17,6 @@ public interface AuthUserRepository extends JpaRepository<AuthUserEntity, Long> 
     void updateAuthUser(String password, String email, Long authUserId);
 
     @Modifying
-    @Query("update AuthUserEntity set status =: status where authUserId =: authUserId")
-    void freezeAuthUser(@Param("status") UserStatus status, @Param("authUserId") Long authUserId);
+    @Query("update AuthUserEntity set status = ?1 where authUserId = ?2")
+    void freezeAuthUser(UserStatus status, Long authUserId);
 }

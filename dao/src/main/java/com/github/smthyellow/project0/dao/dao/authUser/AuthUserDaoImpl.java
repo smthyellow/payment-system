@@ -29,6 +29,7 @@ public class AuthUserDaoImpl implements AuthUserDao {
         authUserRepository.save(authUserEntity);
         Long authUserId = authUserEntity.getAuthUserId();
         UserEntity userEntity = new UserEntity(firstName, lastName, phone, authUserEntity);
+        userEntity.setAuthUserEntity(authUserEntity);
         userRepository.save(userEntity);
         return authUserId;
     }
