@@ -9,18 +9,6 @@ import com.github.smthyellow.project0.model.AuthUser;
 
 import java.util.List;
 
-/*
-TODO: add account +
-TODO: minus balance +
-TODO: plus balance
-TODO: change status
-TODO: find by authUserId (list)
-TODO: find by id
-TODO: change limit
-TODO: сравнить лимит и баланс
- */
-
-
 public class AccountServiceImpl implements AccountService{
     private final AccountDao accountDao;
 
@@ -38,6 +26,26 @@ public class AccountServiceImpl implements AccountService{
     public int minusBalance(int sum, long accountId) {
         int balance = accountDao.minusBalance(accountId, sum);
         return balance;
+    }
+
+    @Override
+    public Account getByAccountNumber(Long accountNumber) {
+        return accountDao.getByAccountNumber(accountNumber);
+    }
+
+    @Override
+    public List<Account> getByAuthUserIds(List<Long> authUserIds) {
+        return accountDao.getByAuthUserIds(authUserIds);
+    }
+
+    @Override
+    public List<Account> getAccountFinishedLimit() {
+        return accountDao.getAccountFinishedLimit();
+    }
+
+    @Override
+    public List<Account> getByAuthUserId(Long authUserid) {
+        return accountDao.getByAuthUserId(authUserid);
     }
 
     /*

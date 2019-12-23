@@ -60,7 +60,6 @@ public class RegistrationController {
         Long id  = authUserService.totalSaveAuthUser(firstName, lastName, email, phone, password);
         log.info("user {} logged", authUser.getEmail());
         rq.getSession().setAttribute("authUser", authUser);
-        rq.getSession().setAttribute("message", "Your id is " + id);
 
         return "personalPage";
     }

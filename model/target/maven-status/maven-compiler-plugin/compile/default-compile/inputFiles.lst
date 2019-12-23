@@ -1,8 +1,9 @@
-/home/transilvania/IdeaProjects/payment-system/model/src/main/java/com/github/smthyellow/project0/model/Bill.java
 /home/transilvania/IdeaProjects/payment-system/model/src/main/java/com/github/smthyellow/project0/model/Card.java
-/home/transilvania/IdeaProjects/payment-system/model/src/main/java/com/github/smthyellow/project0/model/Status.java
 /home/transilvania/IdeaProjects/payment-system/model/src/main/java/com/github/smthyellow/project0/model/Role.java
 /home/transilvania/IdeaProjects/payment-system/model/src/main/java/com/github/smthyellow/project0/model/AuthUser.java
+/home/transilvania/IdeaProjects/payment-system/model/src/main/java/com/github/smthyellow/project0/model/AccountAndCardStatus.java
 /home/transilvania/IdeaProjects/payment-system/model/src/main/java/com/github/smthyellow/project0/model/Transfer.java
+/home/transilvania/IdeaProjects/payment-system/model/src/main/java/com/github/smthyellow/project0/model/Offer.java
+/home/transilvania/IdeaProjects/payment-system/model/src/main/java/com/github/smthyellow/project0/model/UserStatus.java
 /home/transilvania/IdeaProjects/payment-system/model/src/main/java/com/github/smthyellow/project0/model/Account.java
 /home/transilvania/IdeaProjects/payment-system/model/src/main/java/com/github/smthyellow/project0/model/User.java

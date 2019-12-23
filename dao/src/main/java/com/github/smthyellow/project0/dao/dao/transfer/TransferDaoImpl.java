@@ -18,11 +18,6 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/*
-TODO find by authUserId
-TODO find by fromAccount
-TODO find by toAccount
- */
 public class TransferDaoImpl implements TransferDao {
     private final TransferRepository transferRepository;
     private final AccountRepository accountRepository;
@@ -33,10 +28,20 @@ public class TransferDaoImpl implements TransferDao {
     }
 
     @Override
-    public void addTransfer(int sum, Long fromAccountId, Long toAccountId) {
+    public void addTransfer(Long fromAccountId, Long toAccountId, int sum) {
+        AccountEntity fromAccountEntity = accountRepository.findByAccountId(fromAccountId).orElse(null);
+        int fromAccountBalance = fromAccountEntity.getBalance() - sum;
+        accountRepository.changeBalance(fromAccountBalance, fromAccountId);
+
+        AccountEntity toAccountEntity = accountRepository.findByAccountId(toAccountId).orElse(null);
+        int toAccountBalance = toAccountEntity.getBalance() + sum;
+        accountRepository.changeBalance(toAccountBalance, toAccountId);
+
+
+
         TransferEntity transferEntity = new TransferEntity(sum, LocalDateTime.now());
-        transferEntity.setFromAccountEntity(accountRepository.findByAccountId(fromAccountId).orElse(null));
-        transferEntity.setToAccountEntity(accountRepository.findByAccountId(toAccountId).orElse(null));
+        transferEntity.setFromAccountEntity(fromAccountEntity);
+        transferEntity.setToAccountEntity(toAccountEntity);
         transferRepository.save(transferEntity);
     }
 

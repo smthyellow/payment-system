@@ -1,0 +1,47 @@
+<!--
+  Created by IntelliJ IDEA.
+  User: transilvania
+  Date: 23/12/2019
+  Time: 00:04
+  To change this template use File | Settings | File Templates.
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0"
+          xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <html>
+    <head>
+        <title>User cards</title>
+    </head>
+    <body>
+    <h2>Add card</h2>
+    <form action="userCardAdministration" method="post">
+        <label for="accountId">Account Id</label>
+        <input required = "" id="accountId" type="text" name="accountId"/><br/>
+        <label for="expiryMonth">Expiry month</label>
+        <input required = "" id="expiryMonth" type="text" name="expiryMonth"/><br/>
+        <label for="expiryYear">Expiry year</label>
+        <input required = "" id="expiryYear" type="text" name="expiryYear"/><br/>
+        <input type="submit"/>
+    </form>
+    <h3>${message}</h3>
+    <!--<c:if test="${cards != null}">
+        <table>
+            <tr>
+                <th>Card number</th>
+                <th>Expiry date</th>
+                <th>Account</th>
+            </tr>
+            <c:forEach items="${cards}" var="cards">
+                <tr>
+                    <td>${cards.cardNumber}</td>
+                    <td>${cards.expiryDate}</td>
+                    <td>${cards.accountId}</td>
+                </tr>
+            </c:forEach>
+            <c:forEach items="${accounts}" var="accounts">
+                <tr></tr>
+            </c:forEach>
+        </table>
+    </c:if>-->
+    </body>
+    </html>
+</jsp:root>

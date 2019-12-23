@@ -9,7 +9,7 @@
     <html>
     <head><title>Data change</title></head>
     <body>
-    <form action="datachange" method="post">
+    <form action="personalDataChange" method="post">
         <label for="firstName">First Name</label>
         <input id="firstName" type="text" name="firstName"/> <br/>
         <label for="lastName">Last Name</label>

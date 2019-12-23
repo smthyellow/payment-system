@@ -10,10 +10,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 @Controller
-@RequestMapping
+@RequestMapping("/administration")
 public class AdministrationController {
     private static final Logger log = LoggerFactory.getLogger(AdministrationController.class);
 
@@ -25,11 +26,11 @@ public class AdministrationController {
         this.userService = userService;
     }
 
-    @GetMapping("/administration")
-    public String doGet(HttpSession session) {
-        AuthUser authUser = (AuthUser) session.getAttribute("authUser");
+    @GetMapping()
+    public String get(HttpServletRequest rq) {
+        AuthUser authUser = (AuthUser) rq.getSession().getAttribute("authUser");
         User user = userService.getUserByAuthUserId(authUser.getAuthUserId());
-        session.setAttribute("fullUserName", user.getFullName());
+        rq.getSession().setAttribute("fullUserName", user.getFullName());
         return "administration";
     }
 }

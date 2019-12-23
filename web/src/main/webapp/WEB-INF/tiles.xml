@@ -33,6 +33,38 @@
         <put-attribute name="body" value="/WEB-INF/view/page/administration.jspx"/>
     </definition>
 
+    <definition name="cardAdministration" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/cardAdministration.jspx"/>
+    </definition>
+
+    <definition name="accountAdministration" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/accountAdministration.jspx"/>
+    </definition>
+
+    <definition name="userAdministration" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/userAdministration.jspx"/>
+    </definition>
+
+    <definition name="userCardAdministration" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/userCardAdministration.jspx"/>
+    </definition>
+
+    <definition name="userAccountAdministration" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/userAccountAdministration.jspx"/>
+    </definition>
+
+    <definition name="personalDataChange" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/personalDataChange.jspx"/>
+    </definition>
+
+    <definition name="logout" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/logout.jspx"/>
+    </definition>
+
+    <definition name="makeTransfer" extends="default">
+        <put-attribute name="body" value="/WEB-INF/view/page/makeTransfer.jspx"/>
+    </definition>
+
 
 </tiles-definitions>
 

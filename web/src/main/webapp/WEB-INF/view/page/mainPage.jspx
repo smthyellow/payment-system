@@ -11,6 +11,6 @@
           xmlns:sec="http://www.springframework.org/security/tags"
           version="2.0">
 
-    <h3>Exchange Rates will be here.</h3>
+    <h2>Main page</h2>
 
 </jsp:root>

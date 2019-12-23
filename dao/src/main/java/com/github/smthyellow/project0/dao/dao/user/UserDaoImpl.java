@@ -10,6 +10,8 @@ import com.github.smthyellow.project0.dao.entity.UserEntity;
 import com.github.smthyellow.project0.model.User;
 
 import javax.persistence.NoResultException;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class UserDaoImpl implements UserDao {
     private final UserRepository userRepository;
@@ -34,6 +36,13 @@ public class UserDaoImpl implements UserDao {
     @Override
     public void updateUser(User user) {
 
+    }
+
+    @Override
+    public List<User> getByFullName(String firstName, String lastName) {
+        return userRepository.findByFirstNameAndLastName(firstName, lastName).stream()
+                .map(UserConverter::fromEntity)
+                .collect(Collectors.toList());
     }
 
     /*

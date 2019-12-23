@@ -37,7 +37,7 @@ public class CardDaoImpl implements CardDao{
     }
 
     @Override
-    public void addCard(int cvv, Long cardNumber, Long accountId, LocalDate expiryDate) {
+    public void addCard(int cvv, Long cardNumber, Long accountId, LocalDate expiryDate, AccountAndCardStatus status) {
         CardEntity cardEntity = new CardEntity(cvv, cardNumber, expiryDate, AccountAndCardStatus.ACTIVE);
         AccountEntity accountEntity = accountRepository.findByAccountId(accountId).orElse(null);
         cardEntity.setAccountEntity(accountEntity);
@@ -78,16 +78,10 @@ public class CardDaoImpl implements CardDao{
                 .map(entity -> entity.getAccountId())
                 .collect(Collectors.toList());
 
-        List<Card> cards = cardRepository.findByAccountIdIn(accountIds).stream()
-                .map(cardEntity -> CardConverter.fromEntity(cardEntity))
+        List<Card> cards = cardRepository.findByAccountEntityIn(accountIds).stream()
+                .map(CardConverter::fromEntity)
                 .collect(Collectors.toList());
         return cards;
-    }
-
-    @Override
-    public void changeLimit(Long cardId, int limit) {
-        Long accountId = cardRepository.findByCardId(cardId).orElse(null).getAccountId();
-        accountRepository.changeLimit(limit, accountId);
     }
 
     @Override
@@ -99,9 +93,33 @@ public class CardDaoImpl implements CardDao{
 
     @Override
     public List<Card> getByAccountId(Long accountId) {
-        List<Card> cards = cardRepository.findByAccountId(accountId).stream()
-                .map(cardEntity -> CardConverter.fromEntity(cardEntity))
+        List<Card> cards = cardRepository.findByAccountEntity(accountId).stream()
+                .map(CardConverter::fromEntity)
                 .collect(Collectors.toList());
         return cards;
+    }
+
+    @Override
+    public Card getByCardNumber(Long cardNumber) {
+        return CardConverter.fromEntity(cardRepository.findByCardNumber(cardNumber).orElse(null));
+    }
+
+    @Override
+    public List<Card> getByAccountIds(List<Long> accountIds) {
+        return cardRepository.findByAccountEntityIn(accountIds).stream()
+                .map(CardConverter::fromEntity)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Card> getByCompletedLimit() {
+        return null;
+    }
+
+    @Override
+    public List<Card> getCardByStatus(AccountAndCardStatus status) {
+        return cardRepository.findByCardStatus(status).stream()
+                .map(CardConverter::fromEntity)
+                .collect(Collectors.toList());
     }
 }

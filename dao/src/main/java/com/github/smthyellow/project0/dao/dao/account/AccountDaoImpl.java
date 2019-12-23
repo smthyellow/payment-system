@@ -62,7 +62,7 @@ public class AccountDaoImpl implements AccountDao {
     @Override
     public void changeStatus(Long accountId, AccountAndCardStatus status) {
         accountRepository.changeStatus(status, accountId);
-        List<CardEntity> cardEntities = cardRepository.findByAccountId(accountId);
+        List<CardEntity> cardEntities = cardRepository.findByAccountEntity(accountId);
         cardEntities.stream().forEach(c -> cardRepository.changeCardStatus(status, c.getCardId()));
     }
 
@@ -73,13 +73,35 @@ public class AccountDaoImpl implements AccountDao {
     }
 
     @Override
-    public boolean compareBalanceWithLimit(Long accountId) {
+    public boolean compareBalanceWithBorder(Long accountId) {
         AccountEntity accountEntity = accountRepository.findByAccountId(accountId).orElse(null);
         return accountEntity.getBalance() > accountEntity.getBorder();
     }
 
     @Override
-    public void changeLimit(Long accountId, int limit) {
-        accountRepository.changeLimit(limit, accountId);
+    public void changeBorder(Long accountId, int border) {
+        accountRepository.changeBorder(border, accountId);
+    }
+
+    @Override
+    public Account getByAccountNumber(Long accountNumber) {
+        return AccountConverter.fromEntity(accountRepository.findByAccountNumber(accountNumber).orElse(null));
+    }
+
+    @Override
+    public List<Account> getByAuthUserIds(List<Long> authUserIds) {
+        return accountRepository.findByAuthUserEntityIn(authUserIds).stream()
+                .map(AccountConverter::fromEntity)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Account> getAccountFinishedLimit() {
+        List<AccountEntity> accountEntities = accountRepository.findAll();
+        List<Account> accounts = accountEntities.stream()
+                .filter(accountEntity -> accountEntity.getBalance()<accountEntity.getBorder())
+                .map(AccountConverter::fromEntity)
+                .collect(Collectors.toList());
+        return accounts;
     }
 }

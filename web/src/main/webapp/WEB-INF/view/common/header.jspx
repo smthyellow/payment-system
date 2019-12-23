@@ -7,7 +7,7 @@
 
     <header class="clearfix">
         <h2><a href="${pageContext.request.contextPath}/mainPage">SmthYellowBank</a></h2>
-    </header>
+
 
     <c:choose>
         <c:when test="${authUser == null}">
@@ -20,6 +20,7 @@
             <h5><a href="${pageContext.request.contextPath}/personalPage">${userFullName}</a></h5>
         </c:when>
     </c:choose>
+    </header>
 </jsp:root>
 
 

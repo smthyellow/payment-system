@@ -6,10 +6,17 @@ import com.github.smthyellow.project0.model.AuthUser;
 import java.util.List;
 
 public interface AccountService {
+    List<Account> getAccountFinishedLimit();
+
+    Account getByAccountNumber(Long accountNumber);
 
     void addAccount(AuthUser authUser, int balance, int limit);
 
     int minusBalance(int sum, long accountId);
+
+    List<Account> getByAuthUserIds(List<Long> authUserIds);
+
+    List<Account> getByAuthUserId(Long authUserid);
     /*
 
     void plusBalance(int sum, long accountId);

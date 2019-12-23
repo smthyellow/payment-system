@@ -13,13 +13,25 @@ import java.util.List;
 import java.util.Optional;
 
 public interface CardRepository extends JpaRepository<CardEntity, Long> {
-    List<CardEntity> findByAccountId(Long accountId);
+    List<CardEntity> findByAccountEntity(Long accountId);
     Optional<CardEntity> findByCardId(Long cardId);
-    List<CardEntity> findByAccountIdIn(List<Long> accountIds);
+    List<CardEntity> findByAccountEntityIn(List<Long> accountIds);
+    Optional<CardEntity> findByCardNumber(Long cardNumber);
+    List<CardEntity> findByCardStatus(AccountAndCardStatus status);
 
 
     @Modifying
     @Query("update CardEntity ce set ce.cardStatus = ?1 where ce.cardId = ?2")
     void changeCardStatus(AccountAndCardStatus status, Long cardId);
+
+
+
+    //@Query("select ce.* from AccountEntity ae left join CardEntity ce on ae.accountId where ae.balance < ae.border")
+
+/*
+    @Query("select ce from UserEntity ue LEFT JOIN AccountEntity ae on ae.authUserEntity = ue.authUserEntity left join CardEntity ce on ce.accountEntity = ae.cardEntities where ue.firstName =:firstname and ue.lastName =:lastName")
+    List<CardEntity> getByFirstNameLastName(@Param("firstName") String firstName, @Param("lastName") String lastName);
+*/
+
 
 }

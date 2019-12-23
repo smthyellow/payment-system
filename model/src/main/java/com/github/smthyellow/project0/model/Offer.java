@@ -1,20 +1,20 @@
 package com.github.smthyellow.project0.model;
 
-public class Bill {
-    private long billId;
+public class Offer {
+    private long offerId;
     private long amount;
 
-    public Bill(long billId, long amount) {
-        this.billId = billId;
+    public Offer(long offerId, long amount) {
+        this.offerId = offerId;
         this.amount = amount;
     }
 
-    public long getBillId() {
-        return billId;
+    public long getOfferId() {
+        return offerId;
     }
 
-    public void setBillId(long billId) {
-        this.billId = billId;
+    public void setOfferId(long offerId) {
+        this.offerId = offerId;
     }
 
     public long getAmount() {

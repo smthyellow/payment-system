@@ -5,7 +5,7 @@ import com.github.smthyellow.project0.model.Transfer;
 import java.util.List;
 
 public interface TransferDao {
-    void addTransfer(int sum, Long fromAccount, Long toAccount);
+    void addTransfer(Long fromAccount, Long toAccount, int sum);
 
     List<Transfer> getByFromAccount(Long fromAccountId);
 

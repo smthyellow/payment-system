@@ -1,5 +1,4 @@
 /home/transilvania/IdeaProjects/payment-system/dao/src/test/java/com/github/smthyellow/project0/dao/converter/CardConverterTest.java
-/home/transilvania/IdeaProjects/payment-system/dao/src/test/java/com/github/smthyellow/project0/dao/converter/BillConverterTest.java
 /home/transilvania/IdeaProjects/payment-system/dao/src/test/java/com/github/smthyellow/project0/dao/dao/card/CardDaoImplTest.java
 /home/transilvania/IdeaProjects/payment-system/dao/src/test/java/com/github/smthyellow/project0/dao/dao/authUser/AuthUserDaoImplTest.java
 /home/transilvania/IdeaProjects/payment-system/dao/src/test/java/com/github/smthyellow/project0/dao/HibernateUtilTest.java
@@ -7,4 +6,5 @@
 /home/transilvania/IdeaProjects/payment-system/dao/src/test/java/com/github/smthyellow/project0/dao/converter/AuthUserConverterTest.java
 /home/transilvania/IdeaProjects/payment-system/dao/src/test/java/com/github/smthyellow/project0/dao/converter/TransferConverterTest.java
 /home/transilvania/IdeaProjects/payment-system/dao/src/test/java/com/github/smthyellow/project0/dao/dao/account/AccountDaoImplTest.java
+/home/transilvania/IdeaProjects/payment-system/dao/src/test/java/com/github/smthyellow/project0/dao/converter/OfferConverterTest.java
 /home/transilvania/IdeaProjects/payment-system/dao/src/test/java/com/github/smthyellow/project0/dao/converter/UserConverterTest.java

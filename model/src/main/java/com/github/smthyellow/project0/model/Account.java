@@ -4,7 +4,7 @@ public class Account {
     private long accountId;
     private long accountNumber;
     private int balance;
-    private int limit;
+    private int border;
     private AccountAndCardStatus status;
 
     public Account() {
@@ -13,7 +13,7 @@ public class Account {
     public Account(long accountNumber, int balance, int limit, AccountAndCardStatus status) {
         this.accountNumber = accountNumber;
         this.balance = balance;
-        this.limit = limit;
+        this.border = limit;
         this.status = status;
     }
 
@@ -21,7 +21,7 @@ public class Account {
         this.accountId = accountId;
         this.accountNumber = accountNumber;
         this.balance = balance;
-        this.limit = limit;
+        this.border = limit;
         this.status = status;
     }
 
@@ -50,12 +50,12 @@ public class Account {
         this.balance = balance;
     }
 
-    public int getLimit() {
-        return limit;
+    public int getBorder() {
+        return border;
     }
 
-    public void setLimit(int limit) {
-        this.limit = limit;
+    public void setBorder(int border) {
+        this.border = border;
     }
 
 }

@@ -1,25 +1,22 @@
 package com.github.smthyellow.project0.service.cardService;
 
+import com.github.smthyellow.project0.model.Account;
+import com.github.smthyellow.project0.model.AccountAndCardStatus;
 import com.github.smthyellow.project0.model.Card;
 
 import java.util.List;
 
 public interface CardService {
-    /*List<Card> getCardsList(long authUserId);
+    List<Card> getByAuthUserId(Long authUserId);
 
-    long addCard(long accountId);
+    List<Card> getCardByStatus(AccountAndCardStatus status);
 
-    Card getCardByCardId(long cardId);
+    Card getByCardNumber(Long cardNumber);
 
-     */
+    List<Card> getByAccountId(Long accountId);
 
-    //void plusBalance(Card card, int sum);
+    List<Card> getByAccountIds(List<Long> accountIds);
 
-    //void minusBalance(Card card, int sum);
+    Long addCard(Long accountId, int expiryMonth, int expiryYear);
 
-    //void blockCard(Card card);
-
-    //void unblockCard(Card card);
-
-    //void deleteCard(Card card);
 }

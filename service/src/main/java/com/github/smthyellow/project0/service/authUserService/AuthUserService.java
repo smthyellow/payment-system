@@ -4,6 +4,8 @@ import com.github.smthyellow.project0.model.AuthUser;
 
 public interface AuthUserService {
 
+    AuthUser getByEmail(String email);
+
     AuthUser login(String email, String password);
 
     AuthUser checkExistence(String email);

@@ -5,21 +5,21 @@
   Time: 22:47
   To change this template use File | Settings | File Templates.
 -->
-<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0"
+          xmlns:c="http://java.sun.com/jsp/jstl/core">
     <html>
     <head>
         <title>Personal page</title>
     </head>
     <body>
 
-    <p>User: ${name}</p>
-    <p>Phone: ${phone}</p>
+    <p>Welcome, ${name}!</p>
 
-    <p><a href="${pageContext.request.contextPath}/cardManagement">Cards</a></p>
-    <p><a href="${pageContext.request.contextPath}/accountManagement">Accounts</a></p>
-    <p><a href="${pageContext.request.contextPath}/utulitymanagement">Services</a></p>
-    <p><a href="${pageContext.request.contextPath}/datachange">Personal data</a></p>
-    <p><a href="${pageContext.request.contextPath}/doTransfer">Transfer money</a></p>
+    <!--<p><a href="${pageContext.request.contextPath}/cardManagement">Cards</a></p>
+    <p><a href="${pageContext.request.contextPath}/accountManagement">Accounts</a></p>-->
+    <p><a href="${pageContext.request.contextPath}/service">Services</a></p>
+    <!--<p><a href="${pageContext.request.contextPath}/personalDataChange">Personal data</a></p>-->
+    <p><a href="${pageContext.request.contextPath}/makeTransfer">Transfer money</a></p>
 
     <p><a href="${pageContext.request.contextPath}/logout">Logout</a></p>
 

@@ -61,4 +61,8 @@ public class AuthUserServiceImpl implements AuthUserService {
         authUserDao.updateAuthUser(authUser, user);
     }
 
+    @Override
+    public AuthUser getByEmail(String email) {
+        return authUserDao.getByEmail(email);
+    }
 }

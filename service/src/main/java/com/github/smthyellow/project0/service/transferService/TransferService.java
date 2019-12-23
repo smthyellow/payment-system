@@ -6,7 +6,8 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public interface TransferService {
-    /*void newTransfer(long fromAccountId, long toAccountId, int sum, LocalDateTime date);
+    void makeTransfer(Long fromAccountId, Long toAccountId, int sum);
+    /*
     List<Transfer> getTransfersToUser(long authUserId);
     List<Transfer> getTransfersFromUser(long authUserId);
 

@@ -26,7 +26,8 @@ public class PersonalPageController {
     public String get(HttpServletRequest rq) {
         AuthUser authUser = (AuthUser) rq.getSession().getAttribute("authUser");
         User user = userService.getUserByAuthUserId(authUser.getAuthUserId());
-        rq.setAttribute("name", user.getFirstName());
+        rq.getSession().setAttribute("name", user.getFirstName());
+
         return "personalPage";
     }
 }

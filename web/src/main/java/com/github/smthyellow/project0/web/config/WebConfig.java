@@ -46,6 +46,57 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     }
 
     @Bean
+    public CardAdministrationController cardAdministrationController(){
+        return new CardAdministrationController(
+                serviceConfig.authUserService(),
+                serviceConfig.userService(),
+                serviceConfig.cardService(),
+                serviceConfig.accountService());
+    }
+
+    @Bean
+    public AccountAdministrationController accountAdministrationController(){
+        return new AccountAdministrationController(serviceConfig.accountService(), serviceConfig.userService());
+    }
+
+    @Bean
+    public UserAdministrationController userAdministrationController(){
+        return new UserAdministrationController(serviceConfig.userService(), serviceConfig.authUserService());
+    }
+
+    @Bean
+    public UserCardAdministrationController userCardAdministrationController(){
+        return new UserCardAdministrationController(
+                serviceConfig.authUserService(),
+                serviceConfig.userService(),
+                serviceConfig.cardService(),
+                serviceConfig.accountService());
+    }
+
+    @Bean
+    public UserAccountAdministrationController userAccountAdministrationController(){
+        return new UserAccountAdministrationController(
+                serviceConfig.authUserService(),
+                serviceConfig.userService(),
+                serviceConfig.accountService());
+    }
+
+    @Bean
+    public PersonalDataChangeController personalDataChangeController(){
+        return new PersonalDataChangeController(serviceConfig.authUserService(), serviceConfig.userService());
+    }
+
+    @Bean
+    public LogoutController logoutController(){
+        return new LogoutController(serviceConfig.authUserService());
+    }
+
+    @Bean MakeTransferController makeTransferController(){
+        return new MakeTransferController(serviceConfig.transferService(), serviceConfig.userService());
+    }
+
+
+    @Bean
     public UrlBasedViewResolver tilesViewResolver(){
         UrlBasedViewResolver resolver = new UrlBasedViewResolver();
         resolver.setViewClass(TilesView.class);

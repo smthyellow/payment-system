@@ -6,35 +6,35 @@ import java.util.List;
 
 @Entity
 @Table
-public class BillEntity {
+public class OfferEntity {
 
     private String name;
-    private long billId;
+    private long offerId;
     private long amount;
     private List<AuthUserEntity> authUserEntities = new ArrayList<>();
 
-    public BillEntity() {
+    public OfferEntity() {
     }
 
-    public BillEntity(String name, Long amount) {
+    public OfferEntity(String name, Long amount) {
         this.name = name;
         this.amount = amount;
     }
 
-    public BillEntity(String name, int billId, Long amount) {
+    public OfferEntity(String name, int offerId, Long amount) {
         this.name = name;
-        this.billId = billId;
+        this.offerId = offerId;
         this.amount = amount;
     }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public long getBillId() {
-        return billId;
+    public long getOfferId() {
+        return offerId;
     }
 
-    public void setBillId(long billId) {
-        this.billId = billId;
+    public void setOfferId(long billId) {
+        this.offerId = billId;
     }
 
     @Column
@@ -55,7 +55,7 @@ public class BillEntity {
         this.amount = amount;
     }
 
-    @ManyToMany(mappedBy = "billEntities", cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "offerEntities", cascade = CascadeType.ALL)
     public List<AuthUserEntity> getAuthUserEntities() {
         return authUserEntities;
     }

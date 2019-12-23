@@ -50,6 +50,6 @@ public class LoginController {
         rq.getSession().setAttribute("authUser", authUser);
         rq.getSession().setAttribute("userFullName", user.getFullName());
 
-        return "personalPage";
+        return "redirect:/personalPage";
     }
 }

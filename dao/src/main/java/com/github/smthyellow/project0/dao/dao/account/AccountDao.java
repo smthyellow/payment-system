@@ -7,7 +7,13 @@ import com.github.smthyellow.project0.model.AuthUser;
 import java.util.List;
 
 public interface AccountDao {
+    List<Account> getAccountFinishedLimit();
+
+    List<Account> getByAuthUserIds(List<Long> authUserIds);
+
     void saveAccount(AuthUser authUser, Long accountNumber, int balance, int limit);
+
+    Account getByAccountNumber(Long accountNumber);
 
     Account getByAccountId(Long accountId);
 
@@ -19,18 +25,8 @@ public interface AccountDao {
 
     List getByAuthUserId(Long authUserId);
 
-    boolean compareBalanceWithLimit(Long accountId);
+    boolean compareBalanceWithBorder(Long accountId);
 
-    void changeLimit(Long accountId, int limit);
-
-
-
-    /*Account getAccountByAccountId(long accountId);
-
-    void updateAccount(Account account);
-
-    List<Account> getAccountsList(long authUserId, int page);
-
-    List<Account> getPage(int page, long authUserId);*/
+    void changeBorder(Long accountId, int border);
 
 }

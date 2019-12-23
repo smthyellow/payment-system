@@ -1,0 +1,25 @@
+<!--
+  Created by IntelliJ IDEA.
+  User: transilvania
+  Date: 23/12/2019
+  Time: 02:57
+  To change this template use File | Settings | File Templates.
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
+    <html>
+    <head><title>Transfers</title></head>
+    <body>
+    <form action="${pageContext.request.contextPath}/makeTransfer" method="post">
+        <label for="fromAccountId">From account</label>
+        <input required="" id="fromAccountId" type="text" name="fromAccountId"/> <br/>
+
+        <label for="toAccountId">To account</label>
+        <input required="" id="toAccountId" type="text" name="toAccountId"/><br/>
+
+        <label for="sum">Sum</label>
+        <input required="" id="sum" type="text" name="sum"/><br/>
+        <input type="submit"/>
+    </form>
+    </body>
+    </html>
+</jsp:root>

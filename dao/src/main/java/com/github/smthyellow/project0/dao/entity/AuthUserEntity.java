@@ -17,7 +17,7 @@ public class AuthUserEntity {
     private UserEntity userEntity;
     private UserStatus status;
     private List<AccountEntity> accountEntities = new ArrayList<>();
-    private List<BillEntity> billEntities = new ArrayList<>();
+    private List<OfferEntity> offerEntities = new ArrayList<>();
 
 
     public AuthUserEntity() {
@@ -106,14 +106,14 @@ public class AuthUserEntity {
     }
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "AuthUserEntity_BillEntity", joinColumns = {@JoinColumn(name = "authUserId")},
-            inverseJoinColumns = {@JoinColumn(name = "billId")}
+    @JoinTable(name = "AuthUserEntity_OfferEntity", joinColumns = {@JoinColumn(name = "authUserId")},
+            inverseJoinColumns = {@JoinColumn(name = "offerId")}
     )
-    public List<BillEntity> getBillEntities() {
-        return billEntities;
+    public List<OfferEntity> getOfferEntities() {
+        return offerEntities;
     }
 
-    public void setBillEntities(List<BillEntity> billEntities) {
-        this.billEntities = billEntities;
+    public void setOfferEntities(List<OfferEntity> offerEntities) {
+        this.offerEntities = offerEntities;
     }
 }
